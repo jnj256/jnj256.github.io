@@ -78,30 +78,30 @@
       year: 2020-now
       description: Physiological Computing Lab at UCL (Department of Computer Science / GDI Hub / UCLIC).
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items: 
-#         - Nobel Prize in Physics 
-#         - Matteucci Medal
-#     - year: 2029
-#       items: 
-#         - Max Planck Medal
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2020
+      items: 
+        - Project Excellence Award
+        - Tata Elxsi
+    - year: 2018
+      items: 
+        - Tata Innovista Award
 
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items: 
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Deep-Learning.
+      items: 
+        - Semantic Segmenation.
+        - Video Object Segmentation.
+    - title: Physiological Computing.
+      items:
+        - Contactless Sensing.
+        - Low-cost Accessible Computing.
 
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
