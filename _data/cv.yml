@@ -2,96 +2,106 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Jitesh Narendra Joshi
     - name: Date of Birth
-      value: 14th March 1879
+      value: 25th June 1986
     - name: Languages
-      value: English, German
+      value: Gujarati, Hindi, English
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: University College London, London, United Kingdom
+      year: 2020-2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Computer Science.
+        - Physiological Computing and Artificial Intelligence.
+        - title: Semantic Segmentation.
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Contrastive Learning.
+            - Adversarial Training.
+            - Domain specific image augmentation for thermal images.
+
+    - title: Cognitive Systems and Interactive Media
+      institution: Universitat Pompeu Fabra, Barcelona, Spain
+      year: 2011
       description:
-        - Description 1.
-        - Description 2.
+        - Research Methodologies in Humanities and Science.
+        - Systems Design, Integration and Control.
+        - Machine Learning
+
+    - title: Electronics and Communication
+      institution: Nirma University, Ahmedabad, India
+      year: 2008
+      description:
+        - Electronic Devices and Circuits.
+        - Embedded Systems.
+        - Microprocessors and Microcontrollers.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Technical Specialist (AI)
+      institution: Tata Elxsi Ltd, India & United Kingdom
+      year: 2016 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Deep Learning and Computer-Vision.
+        - Health and Life-Science.
+        - Optics and System Engineering
+        - title: Roles:
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+            - Technical Architect.
+            - Project Manager.
+
+    - title: Lead R&D Engineer
+      institution: Azoi Inc, Ahmedabad India
+      year: 2014 - 2016
       description:
-        - Description 1.
-        - Description 2.
+        - Signal Processing, Statistical Analysis.
+        - Support for Patent Filing and Clinical Validation.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Senior R&D Engineer
+      institution: National Brain Research Centre, Gurgaon, India
+      year: 2011-2014
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+    - title: Programmer Analyst
+      institution: Cognizant Technology Solutions
+      year: 2009 - 2010
+      # description:
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/orgs/PhysiologicAILab/repositories">Repositories of the Research Group</a>
+      year: 2020-now
+      description: Physiological Computing Lab at UCL (Department of Computer Science / GDI Hub / UCLIC).
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items: 
+#         - Nobel Prize in Physics 
+#         - Matteucci Medal
+#     - year: 2029
+#       items: 
+#         - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
