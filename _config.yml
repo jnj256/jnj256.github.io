@@ -8,8 +8,6 @@ middle_name: Narendra
 last_name: Joshi
 email: jitesh.joshi.20@ucl.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-
 Jitesh is a PhD student in Computer Science at UCL Interaction Centre. 
 He is supervised by [Dr. Youngjun Cho](https://uclic.ucl.ac.uk/people/youngjun-cho) and [Prof. Nadia Berthouze](https://uclic.ucl.ac.uk/people/nadia-berthouze), and supported by the Overseas Research Scholarship and the Graduate Research Scholarship. 
 At UCLIC, Jitesh's research focuses on developing novel computational framework for contactless physiological monitoring using thermal infrared imaging, with an objective to make the contactless extraction of physiological signals reliable in real-world scenarios.
