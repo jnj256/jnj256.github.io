@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://uclic.ucl.ac.uk/">University College London</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://uclic.ucl.ac.uk/'>University College London</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
