@@ -3,12 +3,22 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: Jitesh
+middle_name: Narendra
+last_name: Joshi
+email: jitesh.joshi.20@ucl.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+
+Jitesh is a PhD student in Computer Science at UCL Interaction Centre. 
+He is supervised by [Dr. Youngjun Cho](https://uclic.ucl.ac.uk/people/youngjun-cho) and [Prof. Nadia Berthouze](https://uclic.ucl.ac.uk/people/nadia-berthouze), and supported by the Overseas Research Scholarship and the Graduate Research Scholarship. 
+At UCLIC, Jitesh's research focuses on developing novel computational framework for contactless physiological monitoring using thermal infrared imaging, with an objective to make the contactless extraction of physiological signals reliable in real-world scenarios.
+
+Jitesh specialises in machine learning, computer vision and system engineering. 
+In the past 10 years, he has worked both in industry and at research institutes, developing algorithms and systems for healthcare applications. 
+Along with his research at UCLIC, he works part-time at Tata Elxsi as a Technical Specialist in the Healthcare and Life Science Business Unit where he is involved in R&D initiatives. 
+He completed MSc in "Cognitive Systems and Interactive Media" at Universitat Pompeu Fabra, Barcelona in 2011.
+
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -66,16 +76,16 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: jnj256 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: jnj256 # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: RN2b6HIAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID
+orcid_id: 0000-0002-1971-2118 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
