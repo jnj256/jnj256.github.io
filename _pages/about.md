@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Jitesh specialises in machine learning, computer vision and system engineering. In the past 12 years, he has worked both in industry and at research institutes, developing algorithms and systems for healthcare applications.
+Jitesh specialises in machine learning, computer vision and system engineering. In the past 12 years, he has worked both at research institutes and industry, with roles involving architecting technical solutions, leading R&D teams as well as project management and client communications.
 
 Currently, Jitesh is pursuing PhD in Computer Science at UCL Interaction Centre (UCLIC). He is supervised by [Dr. Youngjun Cho](https://youngjuncho.com/) and [Prof. Nadia Berthouze](https://uclic.ucl.ac.uk/people/nadia-berthouze), and supported by the Overseas Research Scholarship and the Graduate Research Scholarship. At UCLIC, Jitesh's research focuses on developing novel computational framework for contactless physiological monitoring using thermal infrared imaging, with an objective to make the contactless extraction of physiological signals reliable in real-world scenarios.
 
