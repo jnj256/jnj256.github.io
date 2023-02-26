@@ -81,12 +81,21 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2020
+    - year: 2017
       items: 
-        - Project Excellence Award, Tata Elxsi
+        - Customer Appreciation Award, Tata Elxsi
+    - year: 2019
+      items: 
+        - Customer Appreciation Award, Tata Elxsi    
     - year: 2018
       items: 
         - <a href="https://tatainnovista.com/" target="_blank">Tata Innovista Award</a>
+    - year: 2020
+      items: 
+        - Project Excellence Award, Tata Elxsi; Project - Deep-learning based enumeration of bacterial colonies; Role - Technical Architect and Project Manager
+    - year: 2021
+      items: 
+        - Project Excellence Award, Tata Elxsi; Project - Automated peritoneal dialysis technology & PoC development; Role - Lead R&D
 
 - title: Academic Interests
   type: nested_list
