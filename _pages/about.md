@@ -6,13 +6,13 @@ subtitle: <a href='https://uclic.ucl.ac.uk/'>University College London</a>.
 # Address. Contacts. Moto. Etc.
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  address: >
-    <p>Room: 3.05</p>
-    <p>169 Euston Road</p>
-    <p>London, UK, NW1 2AE</p>
+  # address: >
+    # <p>Room: 3.05</p>
+    # <p>169 Euston Road</p>
+    # <p>London, UK, NW1 2AE</p>
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
