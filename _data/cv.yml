@@ -11,7 +11,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: PhD (Pursuing)
       institution: University College London, London, United Kingdom
       year: 2020-2024
       description:
@@ -43,7 +43,7 @@
   type: time_table
   contents:
     - title: Technical Specialist (AI)
-      institution: Tata Elxsi Ltd, India & United Kingdom
+      institution: <a href="https://www.tataelxsi.com/" target="_blank">Tata Elxsi Ltd</a>, India & United Kingdom
       year: 2016 - 2023
       description:
         - Deep Learning and Computer-Vision.
@@ -62,7 +62,7 @@
         - Support for Patent Filing and Clinical Validation.
 
     - title: Senior R&D Engineer
-      institution: National Brain Research Centre, Gurgaon, India
+      institution: <a href="http://www.nbrc.ac.in/newweb/" target="_blank">National Brain Research Centre</a>, Gurgaon, India
       year: 2011-2014
 
     - title: Programmer Analyst
@@ -83,11 +83,10 @@
   contents:
     - year: 2020
       items: 
-        - Project Excellence Award
-        - Tata Elxsi
+        - Project Excellence Award, Tata Elxsi
     - year: 2018
       items: 
-        - Tata Innovista Award
+        - <a href="https://tatainnovista.com/" target="_blank">Tata Innovista Award</a>
 
 - title: Academic Interests
   type: nested_list
@@ -104,4 +103,6 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Indian Classical Music
+    - Yoga
+    - Scientific Spiritualism
