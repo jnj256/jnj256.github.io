@@ -115,9 +115,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Jitesh's Blogs # blog_name will be displayed in your blog page
+blog_name: Blogs # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: To be Updated
+blog_description: (in-progress)
 permalink: /blog/:year/:title/
 
 # Pagination
