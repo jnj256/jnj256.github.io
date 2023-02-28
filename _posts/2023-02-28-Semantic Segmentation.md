@@ -3,7 +3,7 @@ layout: post
 title:  Semantic Segmentation of Thermal Facial Images
 date:   2023-02-28 01:55:16
 description: Real-world challenges in segmentation and proposed SAM-CL approach
-tags: Adersarial-Learning, Contrastive-Learning, Semantic-Segmentation, Domain-Specific-Augmentation
+tags: Adversarial-Learning, Contrastive-Learning, Semantic-Segmentation, Domain-Specific-Augmentation
 categories: computer-vision
 ---
 
