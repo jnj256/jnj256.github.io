@@ -1,12 +1,8 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Jitesh Narendra Joshi
-    - name: Date of Birth
-      value: 25th June 1986
-    - name: Languages
-      value: Gujarati, Hindi, English
+    - name: Name
+      value: Jitesh Joshi
 
 - title: Education
   type: time_table
