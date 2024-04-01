@@ -42,13 +42,12 @@
       institution: <a href="https://profiles.ucl.ac.uk/79098-jitesh-joshi" target="_blank">University College London</a>, London, United Kingdom
       year: 2020 - present
       description:
-        - Supporting academics and professors with teaching activities.
-        - title: Courses
+        - title: Supporting academics and professors with teaching activities for following course modules
           contents:
-            - <a href="https://www.ucl.ac.uk/module-catalogue/modules/research-methods-and-making-skills-COMP0145" target="_blank">COMP0145 - Research Methods and Making Skills</a>
-            - <a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-computing-and-human-robot-interaction-COMP0053" target="_blank">COMP0053, Affective Computing and Human-Robot Interaction (AC-HRI)</a>
-            - <a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-interaction-PSYC0021" target="_blank">PSYC0021, Affective Interaction</a>
-            - <a href="https://www.ucl.ac.uk/module-catalogue/modules/systems-engineering-COMP0016" target="_blank">COMP0016, Systems Engineering</a>
+            - Research Methods and Making Skills (<a href="https://www.ucl.ac.uk/module-catalogue/modules/research-methods-and-making-skills-COMP0145" target="_blank">COMP0145</a>)
+            - Affective Computing and Human-Robot Interaction (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-computing-and-human-robot-interaction-COMP0053" target="_blank">COMP0053</a>)
+            - Affective Interactio (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-interaction-PSYC0021" target="_blank">PSYC0021n</a>)
+            - Systems Engineering (<a href="https://www.ucl.ac.uk/module-catalogue/modules/systems-engineering-COMP0016" target="_blank">COMP0016</a>)
 
     - title: Solution Architect (consultant)
       institution: <a href="https://www.tataelxsi.com/" target="_blank">Tata Elxsi Ltd</a>, London, United Kingdom
