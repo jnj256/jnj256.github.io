@@ -269,6 +269,7 @@ scholar:
   replace_strings: true
   join_strings: true
 
+  # If this creates a "Details" link, then removing it for now.
   # details_dir: bibliography
   # details_layout: bib.html
   # details_link: Details
