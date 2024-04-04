@@ -271,7 +271,7 @@ scholar:
 
   details_dir: bibliography
   details_layout: bib.html
-  details_link: Details
+  # details_link: Details
 
   query: "@*"
 
