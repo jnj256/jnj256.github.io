@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Researcher, <a href='https://profiles.ucl.ac.uk/79098-jitesh-joshi'>PhD Candidate @ University College London (UCL)</a>. 
+subtitle: Researcher, PhD Candidate @ University College London (UCL). 
 # Address. Contacts. Moto. Etc.
 
 profile:
@@ -13,6 +13,7 @@ profile:
     <p>Room: 3.05</p>
     <p>169 Euston Road</p>
     <p>London, UK, NW1 2AE</p>
+    <p><a href='https://profiles.ucl.ac.uk/79098-jitesh-joshi'>UCL Profile Page</a></p>
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
