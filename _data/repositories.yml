@@ -5,6 +5,7 @@ github_repos:
   - PhysiologicAILab/PhysioKit
   - PhysiologicAILab/SAM-CL
   - PhysiologicAILab/iBVP-Dataset
+  - PhysiologicAILab/rPPG-Toolbox
   - PhysiologicAILab/SAMCL_Inference
   - PhysiologicAILab/TC001_SAMCL
   - PhysiologicAILab/PhysioSync
