@@ -4,3 +4,7 @@ github_users:
 github_repos:
   - PhysiologicAILab/PhysioKit
   - PhysiologicAILab/SAM-CL
+  - PhysiologicAILab/iBVP-Dataset
+  - PhysiologicAILab/SAMCL_Inference
+  - PhysiologicAILab/TC001_SAMCL
+  - PhysiologicAILab/PhysioSync
