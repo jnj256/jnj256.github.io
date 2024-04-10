@@ -1,6 +1,5 @@
-github_users:
-  - jnj256
-  - PhysiologicAILab
+# github_users:
+#   - jnj256
 
 github_repos:
   - PhysiologicAILab/PhysioKit
