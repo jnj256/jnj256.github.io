@@ -124,7 +124,7 @@
       - title: Key Projects
         contents:
           - Functional MRI (fMRI) based investigation of visuospatial perception as diagnostic biomarker in patients with Alzheimer's disease.
-          - BOLDSync - a MATLAB based toolbox to facilitate the presentation of audio-visual stimulus in synchronisation with fMRI scanner.
+          - BOLDSync a MATLAB based toolbox to facilitate the presentation of audiovisual stimulus in synchronisation with fMRI scanner.
 
 
     - title: Programmer Analyst
@@ -157,7 +157,7 @@
           - <a href="https://github.com/PhysiologicAILab/PhysioKit">Source code for the toolkit</a>.
           - <a href="https://pypi.org/project/PhysioKit2/">PyPI project for easy installation of the toolkit</a>.
 
-    - title: iBVP Dataset - RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
+    - title: iBVP Dataset; RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
       year: 2023 - 2024
       description: 
         Work published in Electronics, MDPI journal, 2024
@@ -181,10 +181,10 @@
         - <a href="https://tatainnovista.com/" target="_blank">Tata Innovista Award</a>
     - year: 2020
       items: 
-        - Project Excellence Award, Tata Elxsi; Project - Deep-learning based enumeration of bacterial colonies; Role - Technical Architect and Project Manager
+        - Project Excellence Award, Tata Elxsi; Project-Deep-learning based enumeration of bacterial colonies; Role-Technical Architect and Project Manager
     - year: 2021
       items: 
-        - Project Excellence Award, Tata Elxsi; Project - Automated peritoneal dialysis technology & PoC development; Role - Lead R&D
+        - Project Excellence Award, Tata Elxsi; Project-Automated peritoneal dialysis technology & PoC development; Role-Lead R&D
 
 - title: Skills
   type: nested_list
