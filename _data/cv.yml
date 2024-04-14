@@ -2,24 +2,27 @@
   type: map
   contents:
     - name: Name
-      value: Jitesh Joshi
+      value: Jitesh Narendra Joshi
 
 - title: Education
   type: time_table
   contents:
     - title: PhD (Pursuing)
-      institution: University College London, London, United Kingdom
+      institution: Department of Computer Science, University College London, London, United Kingdom
       year: 2020-2024
       description:
-        - Computer Science.
-        - Physiological Computing and Artificial Intelligence.
-        - title: Semantic Segmentation.
+        - Thesis title - Contactless Extraction of Physiological Signals using RGB and Thermal Infrared Imaging.
+        - title: Key Research Areas
           contents:
-            - Contrastive Learning.
-            - Adversarial Training.
-            - Domain specific image augmentation for thermal images.
+            - Semantic Segmentation
+            - Contrastive Learning
+            - Generative Adversarial Networks
+            - Domain specific image augmentation for thermal images
+            - Remote Plotoplethysmography (rPPG)
+            - Dense signal quality analysis of PPG signals
+            - Face and landmarks detection in RGB-Thermal images
 
-    - title: Cognitive Systems and Interactive Media
+    - title: Masters - Cognitive Systems and Interactive Media
       institution: Universitat Pompeu Fabra, Barcelona, Spain
       year: 2011
       description:
@@ -27,7 +30,7 @@
         - Systems Design, Integration and Control.
         - Machine Learning
 
-    - title: Electronics and Communication
+    - title: B.Tech. - Electronics and Communication
       institution: Nirma University, Ahmedabad, India
       year: 2008
       description:
@@ -56,10 +59,15 @@
         - Health and Life-Sciences Business Unit.
         - title: Role Description
           contents:
-            - Research literature and patents review.
+            - Review of academic literature and patents.
             - Ideation, feasibility analysis and proof-of-concept design for algorithmic solutions.
             - Review of technical proposals, design documents and customer deliverables.
             - Mentoring of AI engineers
+        - title: Key Projects
+          contents:
+            - Growth curve analysis for molecular detection system
+            - RGB-thermal imaging solutions for patient-bed automation in ICU.
+            - Eye-gaze tracking for autism diagnosis
         - title: Domains of Contributions
           contents:
             - Medical device development
@@ -85,7 +93,6 @@
             - Edge computing based dense object detection for enumerating bacterial colonies.
             - Point-of-care diagnostics device development for sickle-cell disease and malaria.
             - Design of innovative automated peritoneal dialysis system.
-        
         - title: Domains of Contributions
           contents:
             - Medical device development
@@ -98,18 +105,16 @@
       institution: Azoi Inc, Ahmedabad India
       year: 2014 - 2016
       description:
-        - Signal Processing, Statistical Analysis.
-        - Support for Patent Filing and Clinical Validation.
         - title: Role Description
           contents:
-            - Developing signal processing algorithms for hand-held vital signs monitoring device. This involved real-time processing of ECG and photo-plethysmography (PPG) along with anomaly detection and noise handling.
-            - Lead the research on cuff-less estimation of blood-pressure, using ECG and PPG signals.
-            - Managed a team of researchers, engineers as well as a team responsible for clinical validation.
-            - Contributed to the submission of technical file for regulatory approval in EU, which lead to the successful market launch of the device.
+            - Algorithm development for hand-held vital signs monitoring device.
+            - Leading a research and clinical validation team.
+            - Collaborating with cross-functional teams including electrical, firmware, software (Android and IOS) and clinical validation.
+            - Drafting of technical file for regulatory approval.
         - title: Domains of Contributions
           contents:
             - Medical device development
-            - Signal processing
+            - Real-time signal processing and anomaly detection (ECG, PPG, Resp, Cuff-less blood pressure)
             - Machine learning
 
     - title: Senior R&D Engineer
