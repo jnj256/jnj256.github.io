@@ -49,27 +49,50 @@
             - Affective Interaction (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-interaction-PSYC0021" target="_blank">PSYC0021</a>)
             - Systems Engineering (<a href="https://www.ucl.ac.uk/module-catalogue/modules/systems-engineering-COMP0016" target="_blank">COMP0016</a>)
 
-    - title: Solution Architect (consultant)
+    - title: Solution Architect (Consultant)
       institution: <a href="https://www.tataelxsi.com/" target="_blank">Tata Elxsi Ltd</a>, London, United Kingdom
       year: 2020 - 2023
       description:
         - Health and Life-Sciences Business Unit.
-        - Deep Learning, Computer-Vision, Medical Imaging
-        - title: Roles
+        - title: Role Description
           contents:
-            - Research consultant.
+            - Research literature and patents review.
+            - Ideation, feasibility analysis and proof-of-concept design for algorithmic solutions.
+            - Review of technical proposals, design documents and customer deliverables.
+            - Mentoring of AI engineers
+        - title: Domains of Contributions
+          contents:
+            - Medical device development
+            - Deep-learning, computer-vision
+            - System engineering
 
     - title: Specialist (AI)
       institution: <a href="https://www.tataelxsi.com/" target="_blank">Tata Elxsi Ltd</a>, Pune, India
       year: 2016 - 2020
       description:
         - Health and Life-Sciences Business Unit.
-        - Deep Learning, Computer-Vision, Medical Imaging
-        - Optics and System Engineering
-        - title: Roles
+        - title: Role Description
           contents:
-            - Technical Architect.
-            - Project Manager.
+            - Ideation, feasibility analysis and development of MVP for algorithmic as well as engineering solutions.
+            - Project management with OEM customer facing responsibilites.
+            - Preparing as well as reviewing design documents, validation plan.
+            - Conducting risk analysis and FMEA.
+            - Mentoring and appraisal review of engineers and senior engineers.
+            - Collaborating with cross-functional teams including hardware, electrical, firmware, software and systems engineering.
+            - Contributing to strategic planning as well as proposals for new customer engagements.
+        - title: Key Projects
+          contents:
+            - Edge computing based dense object detection for enumerating bacterial colonies.
+            - Point-of-care diagnostics device development for sickle-cell disease and malaria.
+            - Design of innovative automated peritoneal dialysis system.
+        
+        - title: Domains of Contributions
+          contents:
+            - Medical device development
+            - Deep-learning, computer-vision
+            - Opto-electro-mechanical systems
+            - System engineering
+
 
     - title: Lead R&D Engineer
       institution: Azoi Inc, Ahmedabad India
@@ -77,6 +100,17 @@
       description:
         - Signal Processing, Statistical Analysis.
         - Support for Patent Filing and Clinical Validation.
+        - title: Role Description
+          contents:
+            - Developing signal processing algorithms for hand-held vital signs monitoring device. This involved real-time processing of ECG and photo-plethysmography (PPG) along with anomaly detection and noise handling.
+            - Lead the research on cuff-less estimation of blood-pressure, using ECG and PPG signals.
+            - Managed a team of researchers, engineers as well as a team responsible for clinical validation.
+            - Contributed to the submission of technical file for regulatory approval in EU, which lead to the successful market launch of the device.
+        - title: Domains of Contributions
+          contents:
+            - Medical device development
+            - Signal processing
+            - Machine learning
 
     - title: Senior R&D Engineer
       institution: <a href="http://www.nbrc.ac.in/newweb/" target="_blank">National Brain Research Centre</a>, Gurgaon, India
