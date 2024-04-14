@@ -82,7 +82,7 @@
         - title: Role Description
           contents:
             - Ideation, feasibility analysis and development of MVP for algorithmic as well as engineering solutions.
-            - Project management with OEM customer facing responsibilites.
+            - Project management with OEM customer facing responsibilities.
             - Preparing as well as reviewing design documents, validation plan.
             - Conducting risk analysis and FMEA.
             - Mentoring and appraisal review of engineers and senior engineers.
@@ -120,19 +120,51 @@
     - title: Senior R&D Engineer
       institution: <a href="http://www.nbrc.ac.in/newweb/" target="_blank">National Brain Research Centre</a>, Gurgaon, India
       year: 2011-2014
+      description:
+        title: Key Projects
+        contents:
+          - Functional MRI (fMRI) based investigation of visuospatial perception as diagnostic biomarker in patients with Alzheimer's disease.
+          - BOLDSync - a MATLAB based toolbox to facilitate the presentation of audio-visual stimulus in synchronisation with fMRI scanner.
+
 
     - title: Programmer Analyst
       institution: Cognizant Technology Solutions
       year: 2009 - 2010
-      # description:
+      description:
+        - Development of software solution for the maintenance of wireless intelligent network, operated by Huawei
 
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/orgs/PhysiologicAILab/repositories">Repositories of the Research Group</a>
-      year: 2020-now
-      description: Physiological Computing Lab at UCL (Department of Computer Science / GDI Hub / UCLIC).
+    - title: Self-adversarial Multi-scale Contrastive Learning for Semantic Segmentation of Thermal Facial Images 
+      year: 2020-2022
+      description: 
+        Work presented at British Machine Vision Conference, 2022
+        title: Project Pages
+        contents:
+          - <a href="https://github.com/PhysiologicAILab/SAM-CL">Training and validation source code</a>.
+          - <a href="https://github.com/PhysiologicAILab/SAMCL_Inference">Inference code</a>.
+          - <a href="https://github.com/PhysiologicAILab/TC001_SAMCL">Real-time inference code for TOPDON TC001 thermal camera</a>.
+
+    - title: PhysioKit - An Open-Source, Low-Cost Physiological Computing Toolkit for Single- and Multi-User Studies 
+      year: 2022-2023
+      description: 
+        Work published in Sensors, MDPI journal, 2023
+        title: Project Pages
+        contents:
+          - <a href="https://github.com/PhysiologicAILab/PhysioKit">Source code for the toolkit</a>.
+          - <a href="https://pypi.org/project/PhysioKit2/">PyPI project for easy installation of the toolkit</a>.
+
+    - title: iBVP Dataset - RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
+      year: 2023-2024
+      description: 
+        Work published in Electronics, MDPI journal, 2024
+        title: Project Pages
+        contents:
+          - <a href="https://github.com/PhysiologicAILab/iBVP-Dataset">GitHub page for the dataset</a>.
+          - <a href="https://github.com/PhysiologicAILab/rPPG-Toolbox">Training and validation source code</a>.
+
 
 - title: Honors and Awards
   type: time_table
@@ -153,17 +185,43 @@
       items: 
         - Project Excellence Award, Tata Elxsi; Project - Automated peritoneal dialysis technology & PoC development; Role - Lead R&D
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Deep-Learning.
+    - title: Research Areas.
       items: 
-        - Semantic Segmenation.
-        - Video Object Segmentation.
-    - title: Physiological Computing.
+        - Computer-vision
+        - Deep-learning
+        - Segmentation
+        - Objects and landmarks detection
+        - Generative Adversarial Networks
+        - Vontrastive learning
+        - Domain specific data-augmentation
+        - Physiological computing
+        - Signal-processing
+        - Neuro-imaging
+        - Cognitive science
+        - Human-computer interaction (HCI)
+    - title: Professional Competencies
       items:
-        - Contactless Sensing.
-        - Low-cost Accessible Computing.
+        - Project management
+        - Systems engineering
+        - Medical device development
+        - Optical system design
+        - System validation and verification
+    - title: Programming Languagues & Frameworks
+      items:
+        - Python
+        - C/C++
+        - MATLAB
+        - LaTex
+        - PyTorch
+        - Tensorflow
+    - title: Languages (reading, writing and speaking fluency)
+      items:
+        - English
+        - Hindi
+        - Gujarati
 
 - title: Other Interests
   type: list
