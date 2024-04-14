@@ -124,7 +124,7 @@
       - title: Key Projects
         contents:
           - Functional MRI (fMRI) based investigation of visuospatial perception as diagnostic biomarker in patients with Alzheimer's disease.
-          - BOLDSync a MATLAB based toolbox to facilitate the presentation of audiovisual stimulus in synchronisation with fMRI scanner.
+          - BOLDSync - a MATLAB based toolbox to facilitate the presentation of audiovisual stimulus in synchronisation with fMRI scanner.
 
 
     - title: Programmer Analyst
