@@ -2,9 +2,9 @@ github_users:
   - jnj256
 
 github_repos:
-  - PhysiologicAILab/PhysioKit
-  - PhysiologicAILab/SAM-CL
   - PhysiologicAILab/iBVP-Dataset
   - PhysiologicAILab/rPPG-Toolbox
+  - PhysiologicAILab/SAM-CL
+  - PhysiologicAILab/PhysioKit
   - PhysiologicAILab/SAMCL_Inference
   - PhysiologicAILab/TC001_SAMCL
