@@ -138,6 +138,25 @@
   type: time_table
   contents:
     - Link to open source project pages
+
+    - title: iBVP Dataset - RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
+      year: 2023 - 2024
+      description: 
+      - Work published in Electronics, MDPI journal, 2024
+      - title: Project Pages
+        contents:
+          - <a href="https://github.com/PhysiologicAILab/iBVP-Dataset">GitHub page for the dataset</a>.
+          - <a href="https://github.com/PhysiologicAILab/rPPG-Toolbox">Training and validation source code</a>.
+
+    - title: PhysioKit - An Open Source, Low Cost Physiological Computing Toolkit for Single and Multi User Studies 
+      year: 2022 - 2023
+      description: 
+      -  Work published in Sensors, MDPI journal, 2023
+      - title: Project Pages
+        contents:
+          - <a href="https://github.com/PhysiologicAILab/PhysioKit">Source code for the toolkit</a>.
+          - <a href="https://pypi.org/project/PhysioKit2/">PyPI project for easy installation of the toolkit</a>.
+
     - title: Self adversarial Multiscale Contrastive Learning for Semantic Segmentation of Thermal Facial Images 
       year: 2020 - 2022
       description: 
@@ -147,24 +166,6 @@
           - <a href="https://github.com/PhysiologicAILab/SAM-CL">Training and validation source code</a>.
           - <a href="https://github.com/PhysiologicAILab/SAMCL_Inference">Inference code</a>.
           - <a href="https://github.com/PhysiologicAILab/TC001_SAMCL">Real-time inference code for TOPDON TC001 thermal camera</a>.
-
-    - title: PhysioKit, An Open Source, Low Cost Physiological Computing Toolkit for Single and Multi User Studies 
-      year: 2022 - 2023
-      description: 
-      -  Work published in Sensors, MDPI journal, 2023
-      - title: Project Pages
-        contents:
-          - <a href="https://github.com/PhysiologicAILab/PhysioKit">Source code for the toolkit</a>.
-          - <a href="https://pypi.org/project/PhysioKit2/">PyPI project for easy installation of the toolkit</a>.
-
-    - title: iBVP Dataset RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
-      year: 2023 - 2024
-      description: 
-      - Work published in Electronics, MDPI journal, 2024
-      - title: Project Pages
-        contents:
-          - <a href="https://github.com/PhysiologicAILab/iBVP-Dataset">GitHub page for the dataset</a>.
-          - <a href="https://github.com/PhysiologicAILab/rPPG-Toolbox">Training and validation source code</a>.
 
 
 - title: Honors and Awards
