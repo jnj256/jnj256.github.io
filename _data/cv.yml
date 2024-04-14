@@ -138,7 +138,7 @@
   type: time_table
   contents:
     - title: Self-adversarial Multi-scale Contrastive Learning for Semantic Segmentation of Thermal Facial Images 
-      year: 2020-2022
+      year: 2020 - 2022
       description: 
         Work presented at British Machine Vision Conference, 2022
         title: Project Pages
@@ -148,7 +148,7 @@
           - <a href="https://github.com/PhysiologicAILab/TC001_SAMCL">Real-time inference code for TOPDON TC001 thermal camera</a>.
 
     - title: PhysioKit - An Open-Source, Low-Cost Physiological Computing Toolkit for Single- and Multi-User Studies 
-      year: 2022-2023
+      year: 2022 - 2023
       description: 
         Work published in Sensors, MDPI journal, 2023
         title: Project Pages
@@ -157,7 +157,7 @@
           - <a href="https://pypi.org/project/PhysioKit2/">PyPI project for easy installation of the toolkit</a>.
 
     - title: iBVP Dataset - RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
-      year: 2023-2024
+      year: 2023 - 2024
       description: 
         Work published in Electronics, MDPI journal, 2024
         title: Project Pages
