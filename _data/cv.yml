@@ -157,11 +157,11 @@
           - <a href="https://github.com/PhysiologicAILab/PhysioKit">Source code for the toolkit</a>.
           - <a href="https://pypi.org/project/PhysioKit2/">PyPI project for easy installation of the toolkit</a>.
 
-    - title: iBVP Dataset; RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
+    - title: iBVP Dataset RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
       year: 2023 - 2024
       description: 
-        - Work published in Electronics, MDPI journal, 2024
-        - title: Project Pages
+      - Work published in Electronics, MDPI journal, 2024
+      - title: Project Pages
         contents:
           - <a href="https://github.com/PhysiologicAILab/iBVP-Dataset">GitHub page for the dataset</a>.
           - <a href="https://github.com/PhysiologicAILab/rPPG-Toolbox">Training and validation source code</a>.
