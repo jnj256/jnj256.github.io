@@ -141,7 +141,7 @@
     - title: Self adversarial Multiscale Contrastive Learning for Semantic Segmentation of Thermal Facial Images 
       year: 2020 - 2022
       description: 
-        Work presented at British Machine Vision Conference, 2022
+      -  Work presented at British Machine Vision Conference, 2022
       - title: Project Pages
         contents:
           - <a href="https://github.com/PhysiologicAILab/SAM-CL">Training and validation source code</a>.
@@ -151,7 +151,7 @@
     - title: PhysioKit, An Open Source, Low Cost Physiological Computing Toolkit for Single and Multi User Studies 
       year: 2022 - 2023
       description: 
-        Work published in Sensors, MDPI journal, 2023
+      -  Work published in Sensors, MDPI journal, 2023
       - title: Project Pages
         contents:
           - <a href="https://github.com/PhysiologicAILab/PhysioKit">Source code for the toolkit</a>.
@@ -160,7 +160,7 @@
     - title: iBVP Dataset; RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
       year: 2023 - 2024
       description: 
-        Work published in Electronics, MDPI journal, 2024
+        - Work published in Electronics, MDPI journal, 2024
         - title: Project Pages
         contents:
           - <a href="https://github.com/PhysiologicAILab/iBVP-Dataset">GitHub page for the dataset</a>.
