@@ -14,20 +14,12 @@
         - Thesis title - Contactless Extraction of Physiological Signals using RGB and Thermal Infrared Imaging.
         - title: Key Research Areas
           contents:
-            - Semantic Segmentation
-            - Contrastive Learning
-            - Generative Adversarial Networks
-            - Domain specific image augmentation for thermal images
-            - Remote Plotoplethysmography (rPPG)
-            - Dense signal quality analysis of PPG signals
-            - Face and landmarks detection in RGB-Thermal images
+            - Semantic segmentation, contrastive learning, generative adversarial networks, domain specific image augmentation for thermal images, remote plotoplethysmography (rPPG), signal quality analysis of physiological signals, face and landmarks detection in RGB-Thermal images.
         - title: Other Collaborative Projects
           contents:
-            - title: Interactive Repair
-              contents:
+            - Interactive Repair
                 - This project is with the Consumer Experience team of <a href="https://textilescircularity.rca.ac.uk/about-us/" target="_blank">Textile Circularity Centre (TCC)</a> for building a cutting-edge and an interactive <a href="https://textilescircularity.rca.ac.uk/repair-technology-and-you/" target="_blank">repair technology</a> using RGB-Thermal imaging. 
-            - title: Thermal Primate
-              contents: 
+            - Thermal Primate
                 - This is an inter-disciplinary project with a research group at <a href="https://www.roehampton.ac.uk/" target="_blank">Roehampton University</a> aimed at thermography based assessment of physiological changes in free-ranging Barbary macaques (primates).
 
     - title: Masters - Cognitive Systems and Interactive Media
