@@ -21,6 +21,14 @@
             - Remote Plotoplethysmography (rPPG)
             - Dense signal quality analysis of PPG signals
             - Face and landmarks detection in RGB-Thermal images
+        - title: Other Collaborative Projects
+          contents:
+          - title: Interactive Repair
+            contents:
+              - This project is with the Consumer Experience team of <a href="https://textilescircularity.rca.ac.uk/about-us/" target="_blank">Textile Circularity Centre (TCC)</a> for building cutting-edge and interactive <a href="https://textilescircularity.rca.ac.uk/repair-technology-and-you/" target="_blank">repair technology</a> using RGB-Thermal imaging. 
+          - title: Thermal Primate
+            contents: 
+              - This is an inter-disciplinary work with a research group at <a href="https://www.roehampton.ac.uk/" target="_blank">Roehampton University</a> aimed at thermography based assessment of physiological changes in free-ranging Barbary macaques (primates).
 
     - title: Masters - Cognitive Systems and Interactive Media
       institution: Universitat Pompeu Fabra, Barcelona, Spain
