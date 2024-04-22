@@ -3,7 +3,7 @@ github_users:
 
 github_repos:
   - PhysiologicAILab/iBVP-Dataset
-  - PhysiologicAILab/rPPG-Toolbox
+  - ubicomplab/rPPG-Toolbox
   - PhysiologicAILab/SAM-CL
   - PhysiologicAILab/PhysioKit
   - PhysiologicAILab/SAMCL_Inference
