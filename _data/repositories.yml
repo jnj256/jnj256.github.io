@@ -2,9 +2,10 @@ github_users:
   - jnj256
 
 github_repos:
+  - PhysiologicAILab/FactorizePhys
   - PhysiologicAILab/iBVP-Dataset
   - ubicomplab/rPPG-Toolbox
   - PhysiologicAILab/SAM-CL
   - PhysiologicAILab/PhysioKit
-  - PhysiologicAILab/SAMCL_Inference
+  # - PhysiologicAILab/SAMCL_Inference
   - PhysiologicAILab/TC001_SAMCL
