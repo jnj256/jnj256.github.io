@@ -8,7 +8,7 @@ subtitle: Researcher @ University College London (UCL).
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   address: >
     <p>Room: 3.05</p>
     <p>169 Euston Road</p>
