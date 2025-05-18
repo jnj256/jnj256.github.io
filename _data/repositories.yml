@@ -2,6 +2,7 @@ github_users:
   - jnj256
 
 github_repos:
+  - PhysiologicAILab/MMRPhys
   - PhysiologicAILab/FactorizePhys
   - PhysiologicAILab/iBVP-Dataset
   - ubicomplab/rPPG-Toolbox
