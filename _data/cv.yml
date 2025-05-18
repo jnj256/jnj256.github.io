@@ -3,9 +3,8 @@
   contents:
     - name: Name
       value: Jitesh Narendra Joshi
-    - name: Summary
-      value: A researcher in artificial intelligence focused on the convergence of deep learning, computer vision, and physiological sensing, with contributions published in NeurIPS and BMVC. Developed novel multidimensional attention mechanisms that achieved 5X better generalization while reducing the model parameters by massive 50X. Combined academic research with industry experience to deliver AI-enabled healthcare solutions in regulated environments, resulting in patented technologies and clinical deployments. Fostered the field's research through open-source contributions to physiological computing frameworks and remote sensing toolkits. Experienced in leading cross-functional teams and translating complex algorithms into efficient edge computing implementations
-
+    - name: Work Authorization
+      value: India (citizenship), United Kingdom (Global Talent Visa, endorsement by Royal Academy of Engineering)
 - title: Education
   type: time_table
   contents:
@@ -13,7 +12,9 @@
       institution: Department of Computer Science, University College London, London, United Kingdom
       year: 2020-2025
       description:
-        - Thesis Title: Enhancing Out-of-distribution Generalization for Robust Camera-based Remote Physiological Sensing
+        - title: Thesis Title
+          contents:
+            - Enhancing Out-of-distribution Generalization for Robust Camera-based Remote Physiological Sensing
         - title: Contribution Summary
           contents:
             - Developed a novel multidimensional attention mechanism for an end-to-end learning-based computational pipeline to extract physiological signals from RGB-Thermal facial videos, achieving 5X performance gains on cross-dataset evaluation and state-of-the-art inference latency, while reducing model parameters by 50X, significantly outperforming transformer-based architectures. Additional contributions include a robust semantic segmentation framework for thermal facial images comprising domain-specific data augmentation techniques and multiscale contrastive loss, a real-time signal quality assessment for wearable biosensors, and an rPPG dataset that is now widely used by researchers in remote physiological sensing.
