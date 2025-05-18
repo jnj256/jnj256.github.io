@@ -36,8 +36,10 @@
             - Machine Learning
         - title: Dissertation
           contents:
-            - Title: EEG-based Investigation of Brain Wave Entrainment by Binaural Beats & Music
-            - Description: An examination of phase coherence was conducted on multi-channel EEG data that had been pre-processed using independent component analysis to investigate the effect of auditory stimulus on functional brain connectivity, among healthy individuals and comatose patients.
+            - EEG-based Investigation of Brain Wave Entrainment by Binaural Beats & Music
+        - title: Project Description
+          contents:
+            - An examination of phase coherence was conducted on multi-channel EEG data that had been pre-processed using independent component analysis to investigate the effect of auditory stimulus on functional brain connectivity, among healthy individuals and comatose patients.
 
     - title: B.Tech. - Electronics and Communication
       institution: Nirma University, Ahmedabad, India
