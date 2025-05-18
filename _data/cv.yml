@@ -3,60 +3,77 @@
   contents:
     - name: Name
       value: Jitesh Narendra Joshi
+    - name: Summary
+      value: A researcher in artificial intelligence focused on the convergence of deep learning, computer vision, and physiological sensing, with contributions published in NeurIPS and BMVC. Developed novel multidimensional attention mechanisms that achieved 5X better generalization while reducing the model parameters by massive 50X. Combined academic research with industry experience to deliver AI-enabled healthcare solutions in regulated environments, resulting in patented technologies and clinical deployments. Fostered the field's research through open-source contributions to physiological computing frameworks and remote sensing toolkits. Experienced in leading cross-functional teams and translating complex algorithms into efficient edge computing implementations
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD (Pursuing)
+    - title: PhD (Thesis under Review)
       institution: Department of Computer Science, University College London, London, United Kingdom
-      year: 2020-2024
+      year: 2020-2025
       description:
-        - Thesis title - Contactless Extraction of Physiological Signals using RGB and Thermal Infrared Imaging.
-        - title: Key Research Areas
+        - Thesis Title: Enhancing Out-of-distribution Generalization for Robust Camera-based Remote Physiological Sensing
+        - title: Contribution Summary
           contents:
-            - Semantic segmentation, contrastive learning, generative adversarial networks, domain specific image augmentation for thermal images, remote plotoplethysmography (rPPG), signal quality analysis of physiological signals, face and landmarks detection in RGB-Thermal images.
+            - Developed a novel multidimensional attention mechanism for an end-to-end learning-based computational pipeline to extract physiological signals from RGB-Thermal facial videos, achieving 5X performance gains on cross-dataset evaluation and state-of-the-art inference latency, while reducing model parameters by 50X, significantly outperforming transformer-based architectures. Additional contributions include a robust semantic segmentation framework for thermal facial images comprising domain-specific data augmentation techniques and multiscale contrastive loss, a real-time signal quality assessment for wearable biosensors, and an rPPG dataset that is now widely used by researchers in remote physiological sensing.
         - title: Other Collaborative Projects
           contents:
-            - Interactive Repair
-                - This project is with the Consumer Experience team of <a href="https://textilescircularity.rca.ac.uk/about-us/" target="_blank">Textile Circularity Centre (TCC)</a> for building a cutting-edge and an interactive <a href="https://textilescircularity.rca.ac.uk/repair-technology-and-you/" target="_blank">repair technology</a> using RGB-Thermal imaging. 
+            - Repair Projector
+                - This project is in collaboration with the Consumer Experience team of <a href="https://textilescircularity.rca.ac.uk/about-us/" target="_blank">Textile Circularity Centre (TCC)</a> for building a computational framework to promote textile sustainable practices. Specifically, my work in this focuses on developing a photorealistic image-inpainting approach using diffusion models with controlnet-based multimodal guidance, optimizing visual fidelity and computational efficiency. 
             - Thermal Primate
-                - This is an inter-disciplinary project with a research group at <a href="https://www.roehampton.ac.uk/" target="_blank">Roehampton University</a> aimed at thermography based assessment of physiological changes in free-ranging Barbary macaques (primates).
+                - This was an inter-disciplinary project in collaboration with a research group at <a href="https://www.roehampton.ac.uk/" target="_blank">Roehampton University</a> aimed at thermography based assessment of physiological changes in free-ranging Barbary macaques (primates).
 
     - title: Masters - Cognitive Systems and Interactive Media
       institution: Universitat Pompeu Fabra, Barcelona, Spain
       year: 2011
       description:
-        - Research Methodologies in Humanities and Science.
-        - Systems Design, Integration and Control.
-        - Machine Learning
+        - title: Major Course Modules 
+          contents: 
+            - Research Methodologies in Humanities and Science.
+            - Systems Design, Integration and Control.
+            - Machine Learning
+        - title: Dissertation
+          contents:
+            - Title: EEG-based Investigation of Brain Wave Entrainment by Binaural Beats & Music
+            - Description: An examination of phase coherence was conducted on multi-channel EEG data that had been pre-processed using independent component analysis to investigate the effect of auditory stimulus on functional brain connectivity, among healthy individuals and comatose patients.
 
     - title: B.Tech. - Electronics and Communication
       institution: Nirma University, Ahmedabad, India
       year: 2008
       description:
-        - Electronic Devices and Circuits.
-        - Embedded Systems.
-        - Microprocessors and Microcontrollers.
-
+        - title: Major Course Modules 
+          contents: 
+            - Digital Signal Processing
+            - Digital Image Processing
+            - Control Systems
+            - Digital Communication Systems
+            - Embedded Systems
+            - Microprocessors and Microcontrollers
+            - Computer Architecture
+            - Electronic Devices and Circuits.
+        
 - title: Experience
   type: time_table
   contents:
-    - title: Post Graduate Teaching Assistant
+    - title: Post Graduate Teaching Assistant, Research Associate
       institution: <a href="https://profiles.ucl.ac.uk/79098-jitesh-joshi" target="_blank">University College London</a>, London, United Kingdom
-      year: 2020 - 2024
+      year: 2020 - 2025
       description:
-        - title: Supporting academics and professors with teaching activities for following course modules
+        - title: Served as a post-graduate teaching assistant for following course modules. Responsibilities spanned mentoring students on dissertation projects through research methodologies, experimental design, computational pipeline implementation, signal processing, and data analysis strategies.
           contents:
             - Research Methods and Making Skills (<a href="https://www.ucl.ac.uk/module-catalogue/modules/research-methods-and-making-skills-COMP0145" target="_blank">COMP0145</a>)
             - Affective Computing and Human-Robot Interaction (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-computing-and-human-robot-interaction-COMP0053" target="_blank">COMP0053</a>)
             - Affective Interaction (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-interaction-PSYC0021" target="_blank">PSYC0021</a>)
             - Systems Engineering (<a href="https://www.ucl.ac.uk/module-catalogue/modules/systems-engineering-COMP0016" target="_blank">COMP0016</a>)
-
+        - title: Projects carried out as Research Associate
+          contents:
+            - Repair Projector - Photorealistic image-inpainting using diffusion models with controlnet-based multimodal guidance, optimizing visual fidelity and computational efficiency.
     - title: Solution Architect (Consultant)
       institution: <a href="https://www.tataelxsi.com/" target="_blank">Tata Elxsi Ltd</a>, London, United Kingdom
-      year: 2020 - present
+      year: 2020 - 2024
       description:
-        - Health and Life-Sciences Business Unit.
+        - Health and Life-Sciences Business Unit
         - title: Role Description
           contents:
             - Review of academic literature and patents.
@@ -101,7 +118,7 @@
             - System engineering
 
 
-    - title: Lead R&D Engineer
+    - title: Senior Scientist - R&D
       institution: Azoi Inc, Ahmedabad India
       year: 2014 - 2016
       description:
@@ -123,21 +140,39 @@
       description:
       - title: Key Projects
         contents:
-          - Functional MRI (fMRI) based investigation of visuospatial perception as diagnostic biomarker in patients with Alzheimer's disease.
-          - BOLDSync - a MATLAB based toolbox to facilitate the presentation of audiovisual stimulus in synchronisation with fMRI scanner.
+          - Conducted functional MRI (fMRI) research, applying multivariate pattern analysis and machine learning techniques to identify statistically significant visuospatial perception biomarkers for early-stage Alzheimer's disease detection.
+          - Developed frameworks for synchronized acquisition of fMRI data and presentation of audiovisual stimuli.
 
 
     - title: Programmer Analyst
       institution: Cognizant Technology Solutions
       year: 2009 - 2010
       description:
-        - Development of software solution for the maintenance of wireless intelligent network, operated by Huawei
+        - Development of software solution for the maintenance of wireless intelligent network, operated by leading telecom service provider.
 
 
 - title: Open Source Projects
   type: time_table
   contents:
     - Link to open source project pages
+
+    - title: MMRPhys - Efficient and Robust Multidimensional Attention in Remote Physiological Sensing through Target Signal Constrained Factorization
+      year: 2024 - 2025
+      description: 
+      - Work under review at IJCV,  2025
+      - title: Project Pages
+        contents:
+          - <a href="https://github.com/PhysiologicAILab/MMRPhys">Official code release</a>.
+          - <a href="https://physiologicailab.github.io/mmrphys-live">Web-browser based real-time demo</a>.
+
+    - title: FactorizePhys - Matrix Factorization for Multidimensional Attention in Remote Physiological Sensing
+      year: 2024 - 2025
+      description: 
+      - Work published at NeurIPS,  2024
+      - title: Project Pages
+        contents:
+          - <a href="https://github.com/PhysiologicAILab/FactorizePhys">Official code release</a>.
+          - <a href="https://github.com/PhysiologicAILab/rPPG-Toolbox">Also integrated with rPPG Toolbox</a>.
 
     - title: iBVP Dataset - RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
       year: 2023 - 2024
@@ -195,26 +230,26 @@
 - title: Skills
   type: nested_list
   contents:
-    - title: Research Areas.
+    - title: Research Areas
       items: 
-        - Computer-vision
-        - Deep-learning
-        - Segmentation
-        - Objects and landmarks detection
+        - Artificial Intelligence
+        - Machine Learning
+        - Attention Mechanisms
+        - Computer Vision
+        - Deep Learning
+        - Semantic Segmentation
+        - Objects Detection with Landmark Keypoints
         - Generative Adversarial Networks
-        - Contrastive learning
-        - Domain specific data-augmentation
-        - Physiological computing
-        - Signal-processing
-        - Neuro-imaging
-        - Cognitive science
-        - Human-computer interaction (HCI)
+        - Contrastive Learning
+        - Domain Specific Data Augmentation
+        - Physiological Computing
+        - Signal Processing
+        - Neuroimaging (fMRI, EEG)
     - title: Professional Competencies
       items:
         - Project management
         - Systems engineering
         - Medical device development
-        - Optical system design
         - System validation and verification
     - title: Programming Languagues & Frameworks
       items:
@@ -224,6 +259,8 @@
         - LaTex
         - PyTorch
         - Tensorflow
+        - ONNX
+        - OpenCV
     - title: Languages (reading, writing and speaking fluency)
       items:
         - English
