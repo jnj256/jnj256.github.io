@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
+permalink: /services/
+title: Teaching and Review Services
 description: Courses supported at UCL as Post-Graduate Teaching Assistant
 nav: false
 nav_order: 5
