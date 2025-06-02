@@ -1,6 +1,6 @@
 ---
 layout: page
-title: submenus
+title: more
 nav: true
 nav_order: 7
 dropdown: true
@@ -11,8 +11,8 @@ children:
     - title: projects
       permalink: /projects/
     - title: divider
-    - title: teaching
-      permalink: /teaching/
+    - title: services
+      permalink: /services/
     - title: divider
     - title: blogs
       permalink: /blog/

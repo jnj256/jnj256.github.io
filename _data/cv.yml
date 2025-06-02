@@ -126,24 +126,20 @@
 - title: Selected Publications and Patents
   type: time_table
   contents:
-    - title: Peer-Reviewed Publications
-      year: 2022-2025
-      description:
-        - title: Journal and Conference Publications
-          contents:
-            - J. Joshi and Y. Cho, Efficient and Robust Multidimensional Attention in Remote Physiological Sensing through Target Signal Constrained Factorization, Under review at International Journal of Computer Vision, 2025 (<a href='https://arxiv.org/abs/2505.07013' target='_blank'>Preprint</a> | <a href='https://github.com/PhysiologicAILab/MMRPhys' target='_blank'>Code</a>  | <a href='https://physiologicailab.github.io/mmrphys-live' target='_blank'>Demo</a>)
-            - J. Joshi, S. Agaian, and Y. Cho, FactorizePhys- Matrix factorization for multidimensional attention in remote physiological sensing, NeurIPS 2024 (<a href='https://proceedings.neurips.cc/paper_files/paper/2024/hash/af1c61e4dd59596f033d826419870602-Abstract-Conference.html' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/FactorizePhys' target='_blank'>Code</a>)
-            - J. Joshi and Y. Cho, iBVP Dataset - RGB-Thermal rPPG dataset with high resolution signal quality labels, Electronics, vol. 13, no. 7, 2024 (<a href='https://www.mdpi.com/2079-9292/13/7/1334' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/iBVP-Dataset' target='_blank'>Access Request</a>)
-            - J. Joshi, K. Wang, and Y. Cho, PhysioKit - An Open-source, Low-cost Physiological Computing Toolkit for Single-and Multi-user Studies, Sensors, vol. 23, no. 19, 2023 (<a href='https://www.mdpi.com/1424-8220/23/19/8244' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/PhysioKit' target='_blank'>Code</a>)
-            - J. Joshi, N. Bianchi-Berthouze, and Y. Cho, Self-adversarial multi-scale contrastive learning for semantic segmentation of thermal facial images, BMVC 2022 (<a href='https://bmvc2022.mpi-inf.mpg.de/0864.pdf' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/SAM-CL' target='_blank'>Code</a>)
+    - title: Publications during PhD Research
+      year: 2021-2025
+      contents:
+          - J. Joshi and Y. Cho, Efficient and Robust Multidimensional Attention in Remote Physiological Sensing through Target Signal Constrained Factorization, Under review at International Journal of Computer Vision, 2025 (<a href='https://arxiv.org/abs/2505.07013' target='_blank'>Preprint</a> | <a href='https://github.com/PhysiologicAILab/MMRPhys' target='_blank'>Code</a>  | <a href='https://physiologicailab.github.io/mmrphys-live' target='_blank'>Demo</a>)
+          - J. Joshi, S. Agaian, and Y. Cho, FactorizePhys- Matrix factorization for multidimensional attention in remote physiological sensing, NeurIPS 2024 (<a href='https://proceedings.neurips.cc/paper_files/paper/2024/hash/af1c61e4dd59596f033d826419870602-Abstract-Conference.html' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/FactorizePhys' target='_blank'>Code</a>)
+          - J. Joshi and Y. Cho, iBVP Dataset - RGB-Thermal rPPG dataset with high resolution signal quality labels, Electronics, vol. 13, no. 7, 2024 (<a href='https://www.mdpi.com/2079-9292/13/7/1334' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/iBVP-Dataset' target='_blank'>Access Request</a>)
+          - J. Joshi, K. Wang, and Y. Cho, PhysioKit - An Open-source, Low-cost Physiological Computing Toolkit for Single-and Multi-user Studies, Sensors, vol. 23, no. 19, 2023 (<a href='https://www.mdpi.com/1424-8220/23/19/8244' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/PhysioKit' target='_blank'>Code</a>)
+          - J. Joshi, N. Bianchi-Berthouze, and Y. Cho, Self-adversarial multi-scale contrastive learning for semantic segmentation of thermal facial images, BMVC 2022 (<a href='https://bmvc2022.mpi-inf.mpg.de/0864.pdf' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/SAM-CL' target='_blank'>Code</a>)
 
     - title: Patents and Industrial Applications
-      year: 2021
-      description:
-        - title: Medical Device Patents
-          contents:
-            - T. Tran, H. Watson, J. Joshi, Imaging device with illumination components, Patent filed 2021 (<a href='https://patents.google.com/patent/WO2021229347A1' target='_blank'>Patent</a> | Commercial product deployed)
-            - T. Tran, H. Watson, J. Joshi, A. SK, and R. Tiwari, Detecting a condition for a culture device using a machine learning model, Patent filed 2021 (<a href='https://patents.google.com/patent/WO2021234514A1/en' target='_blank'>Patent</a> | Commercial product deployed)
+      year: 2018-2020
+      contents:
+          - T. Tran, H. Watson, J. Joshi, Imaging device with illumination components, Patent filed 2021 (<a href='https://patents.google.com/patent/WO2021229347A1' target='_blank'>Patent</a> | Commercial product deployed)
+          - T. Tran, H. Watson, J. Joshi, A. SK, and R. Tiwari, Detecting a condition for a culture device using a machine learning model, Patent filed 2021 (<a href='https://patents.google.com/patent/WO2021234514A1/en' target='_blank'>Patent</a> | Commercial product deployed)
 
 - title: Education
   type: time_table
