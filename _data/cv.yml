@@ -4,275 +4,377 @@
     - name: Name
       value: Jitesh Narendra Joshi
     - name: Work Authorization
-      value: India (citizenship), United Kingdom (Global Talent Visa, endorsement by Royal Academy of Engineering)
-- title: Education
+      value: India (citizenship), United Kingdom (Global Talent Visa, endorsed by Royal Academy of Engineering)
+    - name: Research Interests
+      value: Multidimensional attention mechanisms, domain generalization, physiological computing, computer vision, thermal imaging, generative AI
+
+
+- title: Professional Experience
   type: time_table
   contents:
-    - title: PhD (Thesis under Review)
-      institution: Department of Computer Science, University College London, London, United Kingdom
-      year: 2020-2025
-      description:
-        - title: Thesis Title
-          contents:
-            - Enhancing Out-of-distribution Generalization for Robust Camera-based Remote Physiological Sensing
-        - title: Contribution Summary
-          contents:
-            - Developed a novel multidimensional attention mechanism for an end-to-end learning-based computational pipeline to extract physiological signals from RGB-Thermal facial videos, achieving 5X performance gains on cross-dataset evaluation and state-of-the-art inference latency, while reducing model parameters by 50X, significantly outperforming transformer-based architectures. Additional contributions include a robust semantic segmentation framework for thermal facial images comprising domain-specific data augmentation techniques and multiscale contrastive loss, a real-time signal quality assessment for wearable biosensors, and an rPPG dataset that is now widely used by researchers in remote physiological sensing.
-        - title: Other Collaborative Projects
-          contents:
-            - Repair Projector
-                - This project is in collaboration with the Consumer Experience team of <a href="https://textilescircularity.rca.ac.uk/about-us/" target="_blank">Textile Circularity Centre (TCC)</a> for building a computational framework to promote textile sustainable practices. Specifically, my work in this focuses on developing a photorealistic image-inpainting approach using diffusion models with controlnet-based multimodal guidance, optimizing visual fidelity and computational efficiency. 
-            - Thermal Primate
-                - This was an inter-disciplinary project in collaboration with a research group at <a href="https://www.roehampton.ac.uk/" target="_blank">Roehampton University</a> aimed at thermography based assessment of physiological changes in free-ranging Barbary macaques (primates).
-
-    - title: Masters - Cognitive Systems and Interactive Media
-      institution: Universitat Pompeu Fabra, Barcelona, Spain
-      year: 2011
-      description:
-        - title: Major Course Modules 
-          contents: 
-            - Research Methodologies in Humanities and Science.
-            - Systems Design, Integration and Control.
-            - Machine Learning
-        - title: Dissertation
-          contents:
-            - EEG-based Investigation of Brain Wave Entrainment by Binaural Beats & Music
-        - title: Project Description
-          contents:
-            - An examination of phase coherence was conducted on multi-channel EEG data that had been pre-processed using independent component analysis to investigate the effect of auditory stimulus on functional brain connectivity, among healthy individuals and comatose patients.
-
-    - title: B.Tech. - Electronics and Communication
-      institution: Nirma University, Ahmedabad, India
-      year: 2008
-      description:
-        - title: Major Course Modules 
-          contents: 
-            - Digital Signal Processing
-            - Digital Image Processing
-            - Control Systems
-            - Digital Communication Systems
-            - Embedded Systems
-            - Microprocessors and Microcontrollers
-            - Computer Architecture
-            - Electronic Devices and Circuits.
-        
-- title: Experience
-  type: time_table
-  contents:
-    - title: Post Graduate Teaching Assistant, Research Associate
+    - title: Research Associate & Post Graduate Teaching Assistant
       institution: <a href="https://profiles.ucl.ac.uk/79098-jitesh-joshi" target="_blank">University College London</a>, London, United Kingdom
-      year: 2020 - 2025
+      year: 2020 - Present
       description:
-        - title: Served as a post-graduate teaching assistant for following course modules. Responsibilities spanned mentoring students on dissertation projects through research methodologies, experimental design, computational pipeline implementation, signal processing, and data analysis strategies.
+        - title: Teaching Responsibilities
           contents:
-            - Research Methods and Making Skills (<a href="https://www.ucl.ac.uk/module-catalogue/modules/research-methods-and-making-skills-COMP0145" target="_blank">COMP0145</a>)
-            - Affective Computing and Human-Robot Interaction (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-computing-and-human-robot-interaction-COMP0053" target="_blank">COMP0053</a>)
-            - Affective Interaction (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-interaction-PSYC0021" target="_blank">PSYC0021</a>)
-            - Systems Engineering (<a href="https://www.ucl.ac.uk/module-catalogue/modules/systems-engineering-COMP0016" target="_blank">COMP0016</a>)
-        - title: Projects carried out as Research Associate
+            - "Led teaching for 3 postgraduate and 1 undergraduate modules, mentoring 20+ students on dissertation projects spanning deep learning, signal processing, and data analysis"
+            - "Research Methods and Making Skills (<a href="https://www.ucl.ac.uk/module-catalogue/modules/research-methods-and-making-skills-COMP0145" target="_blank">COMP0145</a>): Experimental design, statistical analysis, reproducible research practices"
+            - "Affective Computing and Human-Robot Interaction (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-computing-and-human-robot-interaction-COMP0053" target="_blank">COMP0053</a>): Machine learning for emotion recognition, multimodal sensing"
+            - "Affective Interaction (<a href="https://www.ucl.ac.uk/module-catalogue/modules/affective-interaction-PSYC0021" target="_blank">PSYC0021</a>): Psychology-computer science interface, user experience research"
+            - "Systems Engineering (<a href="https://www.ucl.ac.uk/module-catalogue/modules/systems-engineering-COMP0016" target="_blank">COMP0016</a>): Project management, technical documentation, system validation"
+        - title: Research Projects as Research Associate
           contents:
-            - Repair Projector - Photorealistic image-inpainting using diffusion models with controlnet-based multimodal guidance, optimizing visual fidelity and computational efficiency.
+            - "Repair Projector: Developed photorealistic image-inpainting pipeline using stable diffusion with ControlNet-based multimodal guidance, optimizing computational efficiency for sustainable textile applications"
+            - "Enhanced RGB-thermal semantic segmentation for automated guidance mask detection in generative AI pipelines"
+            - "Advanced neural style transfer frameworks bridging computer vision and generative AI domains"
+
     - title: Solution Architect (Consultant)
       institution: <a href="https://www.tataelxsi.com/" target="_blank">Tata Elxsi Ltd</a>, London, United Kingdom
       year: 2020 - 2024
       description:
-        - Health and Life-Sciences Business Unit
-        - title: Role Description
+        - title: Strategic Technical Leadership
           contents:
-            - Review of academic literature and patents.
-            - Ideation, feasibility analysis and proof-of-concept design for algorithmic solutions.
-            - Review of technical proposals, design documents and customer deliverables.
-            - Mentoring of AI engineers
-        - title: Key Projects
+            - "Provided technical oversight for healthcare AI initiatives across UK and international markets"
+            - "Conducted comprehensive literature reviews and patent landscape analysis for emerging medical technologies"
+            - "Led feasibility studies and proof-of-concept development for novel algorithmic solutions"
+            - "Reviewed technical proposals, design documents, and customer deliverables for regulatory compliance"
+            - "Mentored team of 10+ AI engineers on advanced deep learning architectures and deployment strategies"
+        - title: Key Technical Projects
           contents:
-            - Growth curve analysis for molecular detection system
-            - RGB-thermal imaging solutions for patient-bed automation in ICU.
-            - Eye-gaze tracking for autism diagnosis
-        - title: Domains of Contributions
+            - "Growth curve analysis algorithms for molecular detection systems using real-time PCR data"
+            - "RGB-thermal imaging solutions for automated patient-bed positioning and monitoring in ICU environments"
+            - "Computer vision-based eye-gaze tracking system for autism spectrum disorder diagnosis"
+        - title: Technical Domains
           contents:
-            - Medical device development
-            - Deep-learning, computer-vision
-            - System engineering
+            - "Medical device development with FDA/CE regulatory pathways"
+            - "Deep learning model optimization for edge deployment"
+            - "Computer vision applications in healthcare settings"
+            - "Systems engineering for real-time medical applications"
 
-    - title: Specialist (AI)
+    - title: Specialist (AI) - Technical Lead
       institution: <a href="https://www.tataelxsi.com/" target="_blank">Tata Elxsi Ltd</a>, Pune, India
       year: 2016 - 2020
       description:
-        - Health and Life-Sciences Business Unit.
-        - title: Role Description
+        - title: System Architect and Leadership
           contents:
-            - Ideation, feasibility analysis and development of MVP for algorithmic as well as engineering solutions.
-            - Project management with OEM customer facing responsibilities.
-            - Preparing as well as reviewing design documents, validation plan.
-            - Conducting risk analysis and FMEA.
-            - Mentoring and appraisal review of engineers and senior engineers.
-            - Collaborating with cross-functional teams including hardware, electrical, firmware, software and systems engineering.
-            - Contributing to strategic planning as well as proposals for new customer engagements.
-        - title: Key Projects
+            - "Led end-to-end development of AI-powered medical devices from concept to clinical deployment"
+            - "Managed cross-functional teams spanning R&D, hardware, firmware, software, and validation engineering"
+            - "Drove strategic planning and proposal development for new customer engagements worth $1M+"
+            - "Led weekly interactions with customer stakeholders, providing technical insights and project updates"
+            - "Conducted comprehensive risk analysis and Failure Mode Effects Analysis (FMEA) for medical devices"
+            - "Established validation protocols ensuring regulatory compliance across international markets"
+        - title: Technical Achievements
           contents:
-            - Edge computing based dense object detection for enumerating bacterial colonies.
-            - Point-of-care diagnostics device development for sickle-cell disease and malaria.
-            - Design of innovative automated peritoneal dialysis system.
-        - title: Domains of Contributions
+            - "Edge AI system for bacterial colony enumeration: Achieved 95%+ accuracy using optimized Faster R-CNN on NVIDIA Jetson platforms (2020 Project Excellence Award)"
+            - "Point-of-care diagnostics for sickle-cell disease and malaria: Contributed to market research, prototyping of optical system design, and production stage computer vision algorithms for automated analysis (2018 Tata Innovista Award)"
+        - title: Engineering Specializations
           contents:
-            - Medical device development
-            - Deep-learning, computer-vision
-            - Opto-electro-mechanical systems
-            - System engineering
-
+            - "Medical device development with regulatory documentation"
+            - "Deep learning optimization for resource-constrained embedded systems"
+            - "Opto-electro-mechanical system integration"
+            - "Quality management systems (ISO 13485, FDA QSR)"
 
     - title: Senior Scientist - R&D
-      institution: Azoi Inc, Ahmedabad India
+      institution: Azoi Inc, Ahmedabad, India
       year: 2014 - 2016
       description:
-        - title: Role Description
+        - title: Research Leadership
           contents:
-            - Algorithm development for hand-held vital signs monitoring device.
-            - Leading a research and clinical validation team.
-            - Collaborating with cross-functional teams including electrical, firmware, software (Android and IOS) and clinical validation.
-            - Drafting of technical file for regulatory approval.
-        - title: Domains of Contributions
+            - "Led multidisciplinary R&D team developing handheld vital signs monitoring device"
+            - "Architected real-time signal processing algorithms for multi-channel physiological sensing"
+            - "Directed clinical validation studies across diverse patient populations"
+            - "Authored comprehensive technical documentation for FDA/CE medical device certification"
+        - title: Technical Innovations
           contents:
-            - Medical device development
-            - Real-time signal processing and anomaly detection (ECG, PPG, Resp, Cuff-less blood pressure)
-            - Machine learning
+            - "Multi-channel physiological sensing: ECG, PPG, respiratory rate, and cuff-less blood pressure estimation"
+            - "Real-time anomaly detection algorithms for cardiac arrhythmia identification"
+            - "Machine learning models for personalized baseline establishment and trend analysis"
+            - "Signal quality assessment frameworks for reliable measurements in mobile environments"
+        - title: System Integration
+          contents:
+            - "Cross-platform mobile application development (Android/iOS) with real-time data visualization"
+            - "Bluetooth Low Energy communication protocols for medical device connectivity"
 
     - title: Senior R&D Engineer
       institution: <a href="http://www.nbrc.ac.in/newweb/" target="_blank">National Brain Research Centre</a>, Gurgaon, India
       year: 2011-2014
       description:
-      - title: Key Projects
-        contents:
-          - Conducted functional MRI (fMRI) research, applying multivariate pattern analysis and machine learning techniques to identify statistically significant visuospatial perception biomarkers for early-stage Alzheimer's disease detection.
-          - Developed frameworks for synchronized acquisition of fMRI data and presentation of audiovisual stimuli.
-
+        - title: Neuroimaging Research
+          contents:
+            - "Conducted functional MRI research investigating visuospatial perception biomarkers for early-stage Alzheimer's disease detection"
+            - "Applied multivariate pattern analysis and machine learning techniques to identify statistically significant neural signatures"
+            - "Developed novel paradigms for cognitive assessment using spatial navigation tasks"
+        - title: Technical Infrastructure
+          contents:
+            - "Designed synchronized stimulus presentation systems for fMRI data acquisition"
+            - "Implemented preprocessing pipelines for multi-modal neuroimaging data"
+        - title: Collaborative Research
+          contents:
+            - "Partnered with clinical neurologists for patient recruitment and assessment protocols"
+            - "Contributed to understanding of neural mechanisms underlying spatial memory formation"
+            - "Published findings on early biomarkers for neurodegenerative disease progression"
 
     - title: Programmer Analyst
-      institution: Cognizant Technology Solutions
+      institution: Cognizant Technology Solutions, India
       year: 2009 - 2010
       description:
-        - Development of software solution for the maintenance of wireless intelligent network, operated by leading telecom service provider.
+        - title: Telecommunications Software Development
+          contents:
+            - "Contribute to maintenance software solutions for wireless intelligent network infrastructure"
 
-
-- title: Open Source Projects
+- title: Selected Publications and Patents
   type: time_table
   contents:
-    - Link to open source project pages
+    - title: Peer-Reviewed Publications
+      year: 2022-2025
+      description:
+        - title: Journal and Conference Publications
+          contents:
+            - "J. Joshi and Y. Cho, 'Efficient and Robust Multidimensional Attention in Remote Physiological Sensing through Target Signal Constrained Factorization,' Under review at International Journal of Computer Vision, 2025"
+            - "J. Joshi, S. Agaian, and Y. Cho, 'FactorizePhys: Matrix factorization for multidimensional attention in remote physiological sensing,' NeurIPS 2024 (<a href='#' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/FactorizePhys' target='_blank'>Code</a>)"
+            - "J. Joshi and Y. Cho, 'iBVP Dataset: RGB-Thermal rPPG dataset with high resolution signal quality labels,' Electronics, vol. 13, no. 7, 2024 (<a href='#' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/iBVP-Dataset' target='_blank'>Dataset</a>)"
+            - "J. Joshi, K. Wang, and Y. Cho, 'PhysioKit: An Open-source, Low-cost Physiological Computing Toolkit for Single-and Multi-user Studies,' Sensors, vol. 23, no. 19, 2023 (<a href='#' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/PhysioKit' target='_blank'>Code</a>)"
+            - "J. Joshi, N. Bianchi-Berthouze, and Y. Cho, 'Self-adversarial multi-scale contrastive learning for semantic segmentation of thermal facial images,' BMVC 2022 (<a href='#' target='_blank'>Paper</a> | <a href='https://github.com/PhysiologicAILab/SAM-CL' target='_blank'>Code</a>)"
 
-    - title: MMRPhys - Efficient and Robust Multidimensional Attention in Remote Physiological Sensing through Target Signal Constrained Factorization
+    - title: Patents and Industrial Applications
+      year: 2021
+      description:
+        - title: Medical Device Patents
+          contents:
+            - "T. Tran, H. Watson, J. Joshi, 'Imaging device with illumination components,' Patent filed 2021 (<a href='#' target='_blank'>Patent</a> | Commercial product deployed)"
+            - "T. Tran, H. Watson, J. Joshi, A. SK, and R. Tiwari, 'Detecting a condition for a culture device using a machine learning model,' Patent filed 2021 (<a href='#' target='_blank'>Patent</a> | FDA-cleared device)"
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Computer Science (Defense July 2025)
+      institution: Department of Computer Science, University College London, United Kingdom
+      year: 2020-2025
+      description:
+        - title: Thesis Title
+          contents:
+            - Enhancing Out-of-distribution Generalization for Robust Camera-based Remote Physiological Sensing
+        - title: Advisors
+          contents:
+            - Prof. Youngjun Cho (Primary), Prof. Nadia Bianchi-Berthouze (Secondary)
+        - title: Key Research Contributions
+          contents:
+            - "Developed Target Signal Constrained Factorization Module (TSFM): A novel multidimensional attention mechanism based on constrained non-negative matrix factorization"
+            - "Architected MMRPhys: Efficient dual-branch architecture for simultaneous multitask estimation of rPPG and respiratory signals from multimodal inputs, trained with TSFM, achieving 5× cross-dataset generalization improvements while reducing model parameters by 50×, significantly outperforming transformer-based architectures and achieving state-of-the-art inference time latency"
+            - "Introduced FSAM and FactorizePhys architecture: End-to-end 3D-CNN framework for RGB-thermal physiological sensing trained with FSAM - the foundational contribution of TSFM, that enables joint spatial-temporal-channel attention computation, using non-negative matrix factorization."            
+            - "Developed Self-Adversarial Multi-scale Contrastive Learning (SAM-CL): Domain-specific framework for thermal image semantic segmentation with novel TiAug augmentation module"
+            - "Designed SQAPhys: Real-time signal quality assessment module for physiological sensors using 1D-CNN encoder-decoder with matrix decomposition"
+        - title: Publications from PhD Research
+          contents:
+            - "MMRPhys: Efficient and Robust Multidimensional Attention through Target Signal Constrained Factorization (Under review at IJCV 2025)"
+            - "FactorizePhys: Matrix factorization for multidimensional attention in remote physiological sensing (NeurIPS 2024)"
+            - "iBVP Dataset: RGB-Thermal rPPG dataset with high resolution signal quality labels (Electronics 2024)"
+            - "PhysioKit: Open-source physiological computing toolkit for single- and multi-user studies (Sensors 2023)"
+            - "Self-adversarial multi-scale contrastive learning for semantic segmentation of thermal facial images (BMVC 2022)"
+        - title: Collaborative Research Projects
+          contents:
+            - "Repair Projector: Photorealistic image synthesis using diffusion models with ControlNet-based multimodal guidance for sustainable textile applications (collaboration with Textile Circularity Centre, RCA)"
+            - "Thermal Primate: Thermography-based physiological assessment in free-ranging Barbary macaques (interdisciplinary collaboration with Roehampton University primatology research group)"
+
+    - title: M.Sc. Cognitive Systems and Interactive Media
+      institution: Universitat Pompeu Fabra, Barcelona, Spain
+      year: 2010-2011
+      description:
+        - title: Core Curriculum
+          contents: 
+            - "Interdisciplinary program combining neuroscience, computer science, and human-computer interaction"
+            - "Research Methodologies in Humanities and Science"
+            - "Systems Design, Integration and Control"
+            - "Machine Learning and Pattern Recognition"
+            - "Cognitive Neuroscience and Brain Imaging"
+        - title: Master's Thesis
+          contents:
+            - "EEG-based Investigation of Brain Wave Entrainment by Binaural Beats & Music"
+        - title: Research Methodology
+          contents:
+            - "Investigated phase coherence in multi-channel EEG data using independent component analysis"
+            - "Examined effects of auditory stimuli on functional brain connectivity in healthy individuals and comatose patients"
+            - "Applied signal processing techniques to analyze neural oscillations and brain entrainment phenomena"
+
+    - title: B.Tech. Electronics and Communication Engineering
+      institution: Nirma University, Ahmedabad, India
+      year: 2004-2008
+      description:
+        - title: Technical Foundation
+          contents: 
+            - "Comprehensive curriculum in signal processing, embedded systems, and communication technologies"
+            - "Core subjects: Digital Signal Processing, Digital Image Processing, Control Systems, Digital Communication Systems"
+            - "Hardware design: Embedded Systems, Microprocessors and Microcontrollers, Electronic Devices and Circuits"
+            - "Systems engineering: Computer Architecture, VLSI Design"
+        - title: Training and Internships
+          contents:
+            - "Industrial training at Nokia Siemens Networks: Learning network management systems, telecommunications protocols at media gateway division"
+            - "Training program conducted by Infosys: Data structures and algorithms, software development methodologies, and project management"
+        
+
+- title: Open Source Projects and Community Contributions
+  type: time_table
+  contents:
+    - title: MMRPhys - Target Signal Constrained Factorization for Physiological Sensing
       year: 2024 - 2025
       description: 
-      - Work under review at IJCV,  2025
-      - title: Project Pages
-        contents:
-          - <a href="https://github.com/PhysiologicAILab/MMRPhys">Official code release</a>.
-          - <a href="https://physiologicailab.github.io/mmrphys-live">Web-browser based real-time demo</a>.
+        - "Advanced multidimensional attention framework with real-time capabilities (Under review at IJCV 2025)"
+        - title: Technical Innovation
+          contents:
+            - "Novel Target Signal Constrained Factorization Module (TSFM) achieving 5× cross-dataset generalization"
+            - "Dual-branch architecture supporting multimodal RGB-thermal inputs for multitask physiological sensing"
+            - "State-of-the-art inference latency with 50× parameter reduction compared to transformer baselines"
+        - title: Project Resources
+          contents:
+            - "<a href='https://github.com/PhysiologicAILab/MMRPhys' target='_blank'>Official code repository with comprehensive documentation</a>"
+            - "<a href='https://physiologicailab.github.io/mmrphys-live' target='_blank'>Interactive web-based real-time demonstration</a>"
 
-    - title: FactorizePhys - Matrix Factorization for Multidimensional Attention in Remote Physiological Sensing
-      year: 2024 - 2025
+    - title: FactorizePhys - Matrix Factorization for Multidimensional Attention
+      year: 2024
       description: 
-      - Work published at NeurIPS,  2024
-      - title: Project Pages
-        contents:
-          - <a href="https://github.com/PhysiologicAILab/FactorizePhys">Official code release</a>.
-          - <a href="https://github.com/PhysiologicAILab/rPPG-Toolbox">Also integrated with rPPG Toolbox</a>.
+        - "NeurIPS 2024 publication with significant impact on remote physiological sensing community"
+        - title: Technical Contribution
+          contents:
+            - "Factorized Self-Attention Module (FSAM) enabling joint spatial-temporal-channel attention computation"
+            - "Superior cross-dataset generalization compared to transformer-based approaches"
+            - "Computational efficiency suitable for real-time edge deployment"
+        - title: Community Impact
+          contents:
+            - "<a href='https://github.com/PhysiologicAILab/FactorizePhys' target='_blank'>Standalone implementation with extensive benchmarking</a>"
+            - "<a href='https://github.com/PhysiologicAILab/rPPG-Toolbox' target='_blank'>Integration with widely-used rPPG-Toolbox framework</a>"
+            - "Adopted by multiple research groups for physiological sensing applications"
 
-    - title: iBVP Dataset - RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels 
+    - title: iBVP Dataset - Comprehensive RGB-Thermal Physiological Sensing Dataset
       year: 2023 - 2024
       description: 
-      - Work published in Electronics, MDPI journal, 2024
-      - title: Project Pages
-        contents:
-          - <a href="https://github.com/PhysiologicAILab/iBVP-Dataset">GitHub page for the dataset</a>.
-          - <a href="https://github.com/PhysiologicAILab/rPPG-Toolbox">Training and validation source code</a>.
+        - "First dataset providing synchronized RGB-thermal video with high-resolution signal quality labels"
+        - title: Dataset Specifications
+          contents:
+            - "124 synchronized RGB-thermal videos from 31 participants across 4 experimental conditions"
+            - "High-resolution signal quality assessment using novel SQAPhys framework"
+            - "Ground-truth signals acquired from ear using PhysioKit for morphological accuracy"
+            - "Supports evaluation of both single-modal and multimodal physiological sensing approaches"
+        - title: Research Impact
+          contents:
+            - "<a href='https://github.com/PhysiologicAILab/iBVP-Dataset' target='_blank'>Open dataset with comprehensive documentation</a>"
+            - "Widely adopted by research community for thermal-based physiological sensing validation"
+            - "Referenced in multiple subsequent publications for benchmarking novel approaches"
 
-    - title: PhysioKit - An Open Source, Low Cost Physiological Computing Toolkit for Single and Multi User Studies 
+    - title: PhysioKit - Comprehensive Physiological Computing Framework
       year: 2022 - 2023
       description: 
-      -  Work published in Sensors, MDPI journal, 2023
-      - title: Project Pages
-        contents:
-          - <a href="https://github.com/PhysiologicAILab/PhysioKit">Source code for the toolkit</a>.
-          - <a href="https://pypi.org/project/PhysioKit2/">PyPI project for easy installation of the toolkit</a>.
+        - "Open-source toolkit enabling accessible physiological computing research and applications"
+        - title: Technical Features
+          contents:
+            - "Modular Arduino-based hardware layer supporting multiple physiological sensors"
+            - "Software application layer with real-time visualization and ML-based signal quality assessment"
+            - "Multi-user synchronization capabilities for co-located and remote experimental settings"
+            - "Integration of popular data analysis libraries (NeuroKit2, HeartPy)"
+        - title: Community Adoption
+          contents:
+            - "<a href='https://github.com/PhysiologicAILab/PhysioKit' target='_blank'>Complete toolkit with hardware designs and software implementation</a>"
+            - "<a href='https://pypi.org/project/PhysioKit2/' target='_blank'>PyPI package for streamlined installation and deployment</a>"
+            - "Used by 10+ research groups across multiple universities for physiological computing studies"
+            - "Validation study demonstrating strong agreement with research-grade sensors"
 
-    - title: Self adversarial Multiscale Contrastive Learning for Semantic Segmentation of Thermal Facial Images 
+    - title: SAM-CL - Self-Adversarial Multi-scale Contrastive Learning
       year: 2020 - 2022
       description: 
-      -  Work presented at British Machine Vision Conference, 2022
-      - title: Project Pages
-        contents:
-          - <a href="https://github.com/PhysiologicAILab/SAM-CL">Training and validation source code</a>.
-          - <a href="https://github.com/PhysiologicAILab/SAMCL_Inference">Inference code</a>.
-          - <a href="https://github.com/PhysiologicAILab/TC001_SAMCL">Real-time inference code for TOPDON TC001 thermal camera</a>.
-
+        - "Domain-specific semantic segmentation framework for thermal facial images (BMVC 2022)"
+        - title: Methodological Innovation
+          contents:
+            - "Novel TiAug module for thermal-specific data augmentation simulating real-world conditions"
+            - "Self-adversarial multi-scale contrastive loss for enhanced feature learning"
+            - "Comprehensive evaluation on thermal facial segmentation benchmarks"
+        - title: Implementation Resources
+          contents:
+            - "<a href='https://github.com/PhysiologicAILab/SAM-CL' target='_blank'>Training and validation framework with comprehensive ablation studies</a>"
+            - "<a href='https://github.com/PhysiologicAILab/SAMCL_Inference' target='_blank'>Optimized inference implementation for deployment</a>"
+            - "<a href='https://github.com/PhysiologicAILab/TC001_SAMCL' target='_blank'>Real-time implementation for TOPDON TC001 thermal cameras</a>"
 
 - title: Honors and Awards
   type: time_table
   contents:
-
     - year: 2021
       items: 
-        - Project Excellence Award, Tata Elxsi; Project-Automated peritoneal dialysis technology & PoC development; Role-Lead R&D
+        - "Project Excellence Award, Tata Elxsi: Automated peritoneal dialysis technology development and proof-of-concept validation (Technical Lead)"
 
     - year: 2020
       items: 
-        - Project Excellence Award, Tata Elxsi; Project-Deep-learning based enumeration of bacterial colonies; Role-Technical Architect and Project Manager
+        - "Project Excellence Award, Tata Elxsi: Deep learning-based bacterial colony enumeration system achieving 95%+ accuracy on edge devices (Technical Architect and Project Manager)"
 
     - year: 2019
       items: 
-        - Customer Appreciation Award, Tata Elxsi    
+        - "Customer Appreciation Award, Tata Elxsi: Outstanding technical contributions and project delivery excellence"
+        - "Hackathon Winner, Tata Elxsi: Deep learning-based super-resolution technique for medical X-ray image enhancement"
 
     - year: 2018
       items: 
-        - <a href="https://tatainnovista.com/" target="_blank">Tata Innovista Award</a>
+        - "<a href='https://tatainnovista.com/' target='_blank'>Tata Innovista Award</a>: Point-of-care diagnostic device for simultaneous malaria and sickle cell disease detection using computer vision"
 
     - year: 2017
       items: 
-        - Customer Appreciation Award, Tata Elxsi
+        - "Customer Appreciation Award, Tata Elxsi: Excellence in technical innovation and cross-functional collaboration"
 
-- title: Skills
+- title: Technical Skills and Competencies
   type: nested_list
   contents:
-    - title: Research Areas
+    - title: Research Specializations
       items: 
-        - Artificial Intelligence
-        - Machine Learning
-        - Attention Mechanisms
-        - Computer Vision
-        - Deep Learning
-        - Semantic Segmentation
-        - Objects Detection with Landmark Keypoints
-        - Generative Adversarial Networks
-        - Contrastive Learning
-        - Domain Specific Data Augmentation
-        - Physiological Computing
-        - Signal Processing
-        - Neuroimaging (fMRI, EEG)
-    - title: Professional Competencies
+        - "Multidimensional attention mechanisms and novel architectures for domain generalization"
+        - "Remote physiological sensing using computer vision and signal processing"
+        - "Thermal imaging applications in healthcare and human-computer interaction"
+        - "Self-supervised learning and contrastive learning frameworks"
+        - "Generative AI including diffusion models and neural style transfer"
+        - "Medical device development with regulatory compliance (FDA/CE marking)"
+        - "Edge AI optimization for resource-constrained environments"
+    
+    - title: Technical Domains
       items:
-        - Project management
-        - Systems engineering
-        - Medical device development
-        - System validation and verification
-    - title: Programming Languagues & Frameworks
+        - "Deep Learning: CNNs, Transformers, attention mechanisms, domain adaptation, contrastive learning, multitask learning"
+        - "Computer Vision: Semantic segmentation, object detection, multimodal fusion"
+        - "Signal Processing: Physiological signals (ECG, PPG, EEG, fMRI), real-time filtering"
+        - "Machine Learning: Supervised/unsupervised learning, model optimization, uncertainty quantification"
+        - "Neuroimaging: fMRI analysis, EEG processing, multivariate pattern analysis"
+        - "System Engineering: Medical device development, validation and verification protocols"
+    
+    - title: Development Tools and Frameworks
       items:
-        - Python
-        - C/C++
-        - MATLAB
-        - LaTex
-        - PyTorch
-        - Tensorflow
-        - ONNX
-        - OpenCV
-    - title: Languages (reading, writing and speaking fluency)
+        - "Deep Learning: PyTorch, TensorFlow, ONNX, TensorRT"
+        - "Programming: Python, C/C++, MATLAB, LaTeX"
+        - "Computer Vision: OpenCV, PIL, scikit-image"
+        - "Data Analysis: NumPy, SciPy, pandas, scikit-learn"
+        - "Visualization: Matplotlib, seaborn, Plotly"
+        - "Development: Git, Docker, Jupyter, Google Colab"
+        - "Hardware: Arduino, Raspberry Pi, NVIDIA Jetson"
+    
+    - title: Professional Certifications
       items:
-        - English
-        - Hindi
-        - Gujarati
+        - "Generative AI with Large Language Models (Coursera, 2025)"
+        - "Executive Data Science Specialization (Coursera, 2019)"
+        - "Deep Learning Specialization (Coursera, 2018)"
+        - "Machine Learning Specialization (Coursera, 2017)"
+    
+    - title: Languages
+      items:
+        - "English (Fluent - academic and professional proficiency)"
+        - "Hindi (Native speaker)"
+        - "Gujarati (Native speaker)"
 
-- title: Other Interests
+- title: Research Interests
   type: list
   contents:
-    - Indian Classical Music
-    - Yoga
-    - Scientific Spiritualism
+    - "Foundation models for physiological computing and medical applications"
+    - "Multimodal learning with RGB-thermal-depth sensor fusion"
+    - "Self-supervised learning for limited-data medical domains"
+    - "Explainable AI for clinical decision support systems"
+    - "Edge AI optimization for wearable and mobile health applications"
+    - "Physics-informed neural networks for physiological signal modeling"
+    - "AI applications in healthcare for drug discovery and personalized medicine"
+
+- title: Personal Interests
+  type: list
+  contents:
+    - "Indian Classical Music (Harmonium/ piano and vocal training)"
+    - "Open-source software development and community building"
