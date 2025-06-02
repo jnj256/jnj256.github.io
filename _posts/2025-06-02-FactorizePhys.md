@@ -15,8 +15,16 @@ It's been over 6 months since NeurIPS 2024, where we presented our work on Remot
 
 This blog post is dedicated to the rPPG research community and all researchers who want to understand the rationale behind matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
 
-![FactorizePhys Poster](assets/img/factorizephys/FactorizePhys_Poster.png)
-*Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.*
+<!-- ![FactorizePhys Poster](assets/img/factorizephys/FactorizePhys_Poster.png)
+*Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.* -->
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/factorizephys/FactorizePhys_Poster.png" title="FactorizePhys Poster" class="img-fluid rounded z-depth-1" %}
+</div>
+<div class="caption">
+    Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.
+</div>
 
 ## The Compression-as-Attention Paradigm
 
