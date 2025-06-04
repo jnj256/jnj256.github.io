@@ -15,9 +15,9 @@ We presented our work - FactorizePhys [[1]](#references), that focuses on remote
 This blog post is dedicated to the rPPG research community and all researchers who want to understand the rationale behind matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
 
 <!-- ![FactorizePhys Poster](/assets/img/factorizephys/FactorizePhys_Poster.png) -->
-<p>
+<div align="center">
     <img src="/assets/img/factorizephys/FactorizePhys_Poster.png" alt="FactorizePhys Poster" style="width:95%; height:auto;">
-</p>
+</div>
 
 *Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.*
 
@@ -35,13 +35,13 @@ This is precisely the problem our work addresses.
 FSAM uses Non-negative Matrix Factorization (NMF) [[3]](#references) to factorize multidimensional feature space into a low-rank approximation, serving as a compressed representation that preserves interdependencies across all dimensions. The key advantages are:
 
 1. **Joint multidimensional attention** - No dimension squeezing required; processes spatial, temporal, and channel dimensions simultaneously
-2. **Parameter-free optimization** - Uses classic Lee & Seung multiplicative update rules, which were recently by  , implemented under 'no_grad' block
+2. **Parameter-free optimization** - Uses classic NMF as proposed by Lee & Seung, 1999 [[3]](#references), with an optimization algorithm approximated as multiplicative updates [[4]](#references), implemented under 'no_grad' block
 3. **Task-specific design** - Tailored for signal extraction tasks with rank-1 factorization
 
 <!-- ![FSAM Overview](/assets/img/factorizephys/FSAM.png) -->
-<p>
-    <img src="/assets/img/factorizephys/FSAM.png" alt="FSAM Overview" style="width:80%; height:auto;">
-</p>
+<div align="center">
+    <img src="/assets/img/factorizephys/FSAM.png" alt="FSAM Overview" style="width:60%; height:auto;">
+</div>
 
 *Figure 2: Overview of the Factorized Self-Attention Module (FSAM) showing how multidimensional voxel embeddings are transformed into a 2D matrix, factorized using NMF, and reconstructed to provide attention weights.*
 
@@ -52,18 +52,12 @@ FSAM uses Non-negative Matrix Factorization (NMF) [[3]](#references) to factoriz
 For input spatial-temporal data **I ∈ ℝ^(T×C×H×W)**, we generate voxel embeddings **ω ∈ ℝ^(ω×ε×ϑ×ϖ)** through 3D feature extraction. The **core innovation** lies in how we reshape these embeddings for factorization.
 
 **Traditional 2D approach** (like Hamburger module [[4]](#references)):
-```
 
-V_s ∈ ℝ^(M×N) where: ϑ (channels) → M, ϖ×ϱ (spatial) → N
-
-```
+$$V_s ∈ ℝ^(M×N) where: ϑ (channels) → M, ϖ×ϱ (spatial) → N$$
 
 **Our 3D spatial-temporal approach**:
-```
 
-V_st ∈ ℝ^(M×N) where: ε (temporal) → M, ϑ×ϖ×ϱ (spatial+channel) → N
-
-```
+$$V_st ∈ ℝ^(M×N) where: ε (temporal) → M, ϑ×ϖ×ϱ (spatial+channel) → N$$
 
 This transformation is **crucial** for rPPG estimation because:
 
@@ -99,11 +93,11 @@ for step in range(MD_STEPS):
     bases = bases ⊙ (numerator / (denominator + ε))
 
 # Reconstruct attention
-V̂_st = bases @ coef^T
-ω̂ = reshape_back(V̂_st)
+$$V̂_st = bases @ coef^T$$
+$$ω̂ = reshape_back(V̂_st)$$
 
 # Apply attention with residual connection
-output = ω + InstanceNorm(ω ⊙ postprocess(ω̂))
+$$output = ω + InstanceNorm(ω ⊙ postprocess(ω̂))$$
 ```
 
 <!-- ![NMF Algorithm Flowchart](images/nmf-algorithm-flowchart.png)
@@ -116,9 +110,9 @@ The paper's ablation studies confirm that **rank-1 factorization performs optima
 *Table 1: Ablation study results showing performance across different factorization ranks. Rank-1 achieves optimal performance, supporting the single signal source assumption for rPPG estimation.*
 
 <!-- ![Rank Ablation Study](assets/img/factorizephys/rank-ablation.png) -->
-<p>
-    <img src="/assets/img/factorizephys/rank-ablation.png" alt="Rank Ablation Study" style="width:50%; height:auto;">
-</p>
+<div align="center">
+    <img src="/assets/img/factorizephys/rank-ablation.png" alt="Rank Ablation Study" style="width:70%; height:auto;">
+</div>
 
 ## Why FSAM Outperforms Transformers
 
@@ -160,9 +154,9 @@ Table 2: Comprehensive evaluation across four datasets shows remarkable generali
 *Table 3: Cross-dataset generalization performance comparison*
 
 <!-- ![Cross-Dataset Performance](/assets/img/factorizephys/cross-dataset-performance.png) -->
-<p>
+<div align="center">
     <img src="/assets/img/factorizephys/cross-dataset-performance.png" alt="Cross-Dataset Performance" style="width:80%; height:auto;">
-</p>
+</div>
 
 FactorizePhys consistently outperforms existing state-of-the-art methods, including the transformer-based methods across different domain shifts, particularly in synthetic-to-real transfer scenarios.
 
@@ -175,9 +169,9 @@ Our cosine similarity visualization between temporal embeddings and ground-truth
 - **Robustness to occlusions** - maintains attention quality even with hair, glasses, or beard
 
 <!-- ![Attention Visualization](assets/img/factorizephys/Attention_Maps.png) -->
-<p>
+<div align="center">
     <img src="/assets/img/factorizephys/Attention_Maps.png" alt="Attention Visualization" style="width:70%; height:auto;">
-</p>
+</div>
 
 *Figure 3: Attention visualization comparing baseline model (left) and FactorizePhys with FSAM (right). Higher cosine similarity scores (brighter regions) indicate better spatial selectivity for pulse-rich facial regions.*
 
@@ -197,9 +191,9 @@ output = head(voxel_embeddings)  # No FSAM needed!
 This dramatically reduces inference latency while maintaining accuracy - ideal for real-time applications.
 
 <!-- ![Inference Time Comparison](/assets/img/factorizephys/Inference-latency.png) -->
-<p>
+<div align="center">
     <img src="/assets/img/factorizephys/Inference-latency.png" alt="Inference Time Comparison" style="width:60%; height:auto;">
-</p>
+</div>
 
 *Figure 4: Performance vs. latency comparison showing FactorizePhys achieves superior accuracy with minimal inference time, especially when FSAM is dropped during inference.*
 
