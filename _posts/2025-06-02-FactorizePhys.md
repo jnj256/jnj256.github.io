@@ -18,7 +18,7 @@ This blog post is dedicated to the rPPG research community and all researchers w
 <!-- ![FactorizePhys Poster](assets/img/factorizephys/FactorizePhys_Poster.png)
 *Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.* -->
 
-{% raw %}
+<!-- {% raw %} -->
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -28,7 +28,7 @@ This blog post is dedicated to the rPPG research community and all researchers w
     Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.
 </div>
 
-{% endraw %}
+<!-- {% endraw %} -->
 
 
 ## The Compression-as-Attention Paradigm
