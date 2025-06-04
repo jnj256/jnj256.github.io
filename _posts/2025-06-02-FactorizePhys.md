@@ -15,6 +15,7 @@ We presented our work on Remote Photoplethysmography (rPPG) [[1]](#references) a
 This blog post is dedicated to the rPPG research community and all researchers who want to understand the rationale behind matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
 
 ![FactorizePhys Poster](/assets/img/factorizephys/FactorizePhys_Poster.png)
+
 *Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.*
 
 
@@ -24,15 +25,18 @@ Using compression as an attention mechanism isn't new. In the CNN-dominated era,
 
 However, a fundamental limitation emerges when working with multidimensional feature spaces: **existing attention mechanisms compute attention disjointly across spatial, temporal, and channel dimensions**. For tasks like rPPG estimation that require joint modeling of these dimensions, squeezing individual dimensions can result in information loss, causing learned attention to miss comprehensive multidimensional feature relationships.
 
-## Enter FSAM: Factorized Self-Attention Module
+This is precisely the problem our work addresses.
 
-This is precisely the problem our work addresses. FSAM uses Non-negative Matrix Factorization (NMF) [[3]](#references) to factorize multidimensional feature space into a low-rank approximation, serving as a compressed representation that preserves interdependencies across all dimensions. The key advantages are:
+## FSAM: Factorized Self-Attention Module
+
+FSAM uses Non-negative Matrix Factorization (NMF) [[3]](#references) to factorize multidimensional feature space into a low-rank approximation, serving as a compressed representation that preserves interdependencies across all dimensions. The key advantages are:
 
 1. **Joint multidimensional attention** - No dimension squeezing required; processes spatial, temporal, and channel dimensions simultaneously
 2. **Parameter-free optimization** - Uses classic Lee & Seung multiplicative update rules, which were recently by  , implemented under 'no_grad' block
 3. **Task-specific design** - Tailored for signal extraction tasks with rank-1 factorization
 
 ![FSAM Overview](/assets/img/factorizephys/FSAM.png)
+
 *Figure 2: Overview of the Factorized Self-Attention Module (FSAM) showing how multidimensional voxel embeddings are transformed into a 2D matrix, factorized using NMF, and reconstructed to provide attention weights.*
 
 ## Mathematical Formulation
@@ -103,8 +107,9 @@ output = ω + InstanceNorm(ω ⊙ postprocess(ω̂))
 
 The paper's ablation studies confirm that **rank-1 factorization performs optimally** for rPPG estimation. This aligns with the physiological assumption that there's a single underlying blood volume pulse signal across different facial regions. Higher ranks (L > 1) showed performance comparable to the baseline without FSAM, indicating rank-1 captures the essential signal structure.
 
+*Table 1: Ablation study results showing performance across different factorization ranks. Rank-1 achieves optimal performance, supporting the single signal source assumption for rPPG estimation.*
+
 ![Rank Ablation Study](assets/img/factorizephys/rank-ablation.png)
-*Figure 3: Ablation study results showing performance across different factorization ranks. Rank-1 achieves optimal performance, supporting the single signal source assumption for rPPG estimation.*
 
 ## Why FSAM Outperforms Transformers
 
@@ -133,7 +138,7 @@ Attention(Q,K,V) = softmax(QK^T/√d_k)V
 
 ### 3. **Superior Cross-Dataset Generalization**
 
-Comprehensive evaluation across four datasets shows remarkable generalization:
+Table 2: Comprehensive evaluation across four datasets shows remarkable generalization
 
 | Training → Testing | PhysFormer (MAE↓) | EfficientPhys (MAE↓) | **FactorizePhys (MAE↓)** |
 |-------------------|-------------------|---------------------|------------------------|
@@ -143,8 +148,11 @@ Comprehensive evaluation across four datasets shows remarkable generalization:
 
 **Key insight**: When trained on synthetic data (SCAMPS) and tested on real data, FactorizePhys shows the smallest performance gap, indicating superior domain transfer.
 
+*Table 3: Cross-dataset generalization performance comparison*
+
 ![Cross-Dataset Performance](/assets/img/factorizephys/cross-dataset-performance.png)
-*Figure 4: Cross-dataset generalization performance comparison. FactorizePhys consistently outperforms transformer-based methods across different domain shifts, particularly in synthetic-to-real transfer scenarios.*
+
+FactorizePhys consistently outperforms existing state-of-the-art methods, including the transformer-based methods across different domain shifts, particularly in synthetic-to-real transfer scenarios.
 
 ### 4. **Attention Visualization**
 
@@ -155,7 +163,8 @@ Our cosine similarity visualization between temporal embeddings and ground-truth
 - **Robustness to occlusions** - maintains attention quality even with hair, glasses, or beard
 
 ![Attention Visualization](assets/img/factorizephys/Attention_Maps.png)
-*Figure 5: Attention visualization comparing baseline model (left) and FactorizePhys with FSAM (right). Higher cosine similarity scores (brighter regions) indicate better spatial selectivity for pulse-rich facial regions.*
+
+*Figure 3: Attention visualization comparing baseline model (left) and FactorizePhys with FSAM (right). Higher cosine similarity scores (brighter regions) indicate better spatial selectivity for pulse-rich facial regions.*
 
 ## The Inference-Time Advantage
 
@@ -173,13 +182,14 @@ output = head(voxel_embeddings)  # No FSAM needed!
 This dramatically reduces inference latency while maintaining accuracy - ideal for real-time applications.
 
 ![Inference Time Comparison](/assets/img/factorizephys/Inference-latency.png)
-*Figure 6: Performance vs. latency comparison showing FactorizePhys achieves superior accuracy with minimal inference time, especially when FSAM is dropped during inference.*
+
+*Figure 4: Performance vs. latency comparison showing FactorizePhys achieves superior accuracy with minimal inference time, especially when FSAM is dropped during inference.*
 
 ## Key Contributions and Broader Implications
 
 ### For the rPPG Community
 
-- **First matrix factorization-based attention** specifically designed for physiological signal extraction
+- **First matrix factorization-based attention** specifically designed for physiological signal extraction from facial videos
 - **State-of-the-art cross-dataset generalization** with dramatically fewer parameters
 - **Real-time deployment capability** without performance degradation
 
@@ -187,7 +197,7 @@ This dramatically reduces inference latency while maintaining accuracy - ideal f
 
 - **Novel attention paradigm** demonstrating that domain-specific designs can outperform generic mechanisms
 - **Efficiency breakthrough**: 138x parameter reduction compared to transformers with superior performance
-- **New perspective on attention**: Factorization as compression can be more effective than dimension squeezing
+- **New perspective on attention in deep-learing architecutures**: Factorization as compression can be more effective than dimension squeezing
 
 <!-- ![Impact Summary](images/contributions-impact-summary.png)
 *Figure 11: Summary of key contributions and their impact on both the rPPG research community and broader AI/computer vision fields.* -->
@@ -197,7 +207,7 @@ This dramatically reduces inference latency while maintaining accuracy - ideal f
 FSAM's success opens several promising avenues:
 
 1. **Extended Applications**: Video understanding, action recognition, time-series analysis
-2. **Enhanced NMF Variants**: Incorporating temporal smoothness or frequency domain constraints
+2. **Enhanced NMF Variants**: Incorporating temporal smoothness or frequency domain constraints. Checkout our subsequent work ([MMRPhys](https://arxiv.org/abs/2505.07013)) that explores this direction for robust estimation of multiple physiological signals.
 3. **Hybrid Architectures**: Combining factorization-based attention with other mechanisms for different modalities
 4. **Theoretical Analysis**: Understanding why rank-1 factorization generalizes so well across datasets
 
@@ -207,19 +217,19 @@ FSAM's success opens several promising avenues:
 
 ## Conclusion
 
-The key insight is profound yet simple: **not all tasks require the full complexity of transformer attention**. For spatial-temporal signal extraction tasks, a well-designed, task-specific attention mechanism can achieve superior performance with dramatically improved efficiency.
+The key insight is profound yet simple: **not all tasks require the full complexity of transformer attention**. For spatial-temporal signal extraction tasks, a well-designed, task-specific attention mechanism can achieve superior robustness with dramatically improved efficiency.
 
-FSAM demonstrates that understanding your problem domain deeply can lead to more effective solutions than applying generic, computationally expensive methods. In an era of ever-growing model sizes, this work shows that **thoughtful design trumps brute-force scaling**.
+FSAM demonstrates that the deeper understanding the problem domain can lead to more effective solutions than applying generic, computationally expensive methods. In an era of ever-growing model sizes, this work shows that **thoughtful design trumps brute-force scaling**.
 
 ---
 
 ## Code and Data Availability
 
-| Resource | Link |
-|----------|------|
-| **Paper** | [FactorizePhys](https://proceedings.neurips.cc/paper_files/paper/2024/hash/af1c61e4dd59596f033d826419870602-Abstract-Conference.html) |
-| **Code** | [GitHub](https://github.com/PhysiologicAILab/FactorizePhys) |
-| **Dataset** | [iBVP Dataset](https://github.com/PhysiologicAILab/iBVP-Dataset) |
+| Resources |  | Link |
+|----------|--|------|
+| **Paper** |  | [FactorizePhys](https://proceedings.neurips.cc/paper_files/paper/2024/hash/af1c61e4dd59596f033d826419870602-Abstract-Conference.html) |
+| **Code** |  | [GitHub](https://github.com/PhysiologicAILab/FactorizePhys) |
+| **Dataset** |  | [iBVP Dataset](https://github.com/PhysiologicAILab/iBVP-Dataset) |
 
 ---
 
