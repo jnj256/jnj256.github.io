@@ -14,7 +14,10 @@ We presented our work - FactorizePhys [[1]](#references), that focuses on remote
 
 This blog post is dedicated to the rPPG research community and all researchers who want to understand the rationale behind matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
 
-![FactorizePhys Poster](/assets/img/factorizephys/FactorizePhys_Poster.png)
+<!-- ![FactorizePhys Poster](/assets/img/factorizephys/FactorizePhys_Poster.png) -->
+<p>
+    <img src="/assets/img/factorizephys/FactorizePhys_Poster.png" alt="FactorizePhys Poster" style="width:95%; height:auto;">
+</p>
 
 *Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.*
 
@@ -35,7 +38,10 @@ FSAM uses Non-negative Matrix Factorization (NMF) [[3]](#references) to factoriz
 2. **Parameter-free optimization** - Uses classic Lee & Seung multiplicative update rules, which were recently by  , implemented under 'no_grad' block
 3. **Task-specific design** - Tailored for signal extraction tasks with rank-1 factorization
 
-![FSAM Overview](/assets/img/factorizephys/FSAM.png)
+<!-- ![FSAM Overview](/assets/img/factorizephys/FSAM.png) -->
+<p>
+    <img src="/assets/img/factorizephys/FSAM.png" alt="FSAM Overview" style="width:80%; height:auto;">
+</p>
 
 *Figure 2: Overview of the Factorized Self-Attention Module (FSAM) showing how multidimensional voxel embeddings are transformed into a 2D matrix, factorized using NMF, and reconstructed to provide attention weights.*
 
@@ -109,7 +115,10 @@ The paper's ablation studies confirm that **rank-1 factorization performs optima
 
 *Table 1: Ablation study results showing performance across different factorization ranks. Rank-1 achieves optimal performance, supporting the single signal source assumption for rPPG estimation.*
 
-![Rank Ablation Study](assets/img/factorizephys/rank-ablation.png)
+<!-- ![Rank Ablation Study](assets/img/factorizephys/rank-ablation.png) -->
+<p>
+    <img src="/assets/img/factorizephys/rank-ablation.png" alt="Rank Ablation Study" style="width:50%; height:auto;">
+</p>
 
 ## Why FSAM Outperforms Transformers
 
@@ -141,16 +150,19 @@ Attention(Q,K,V) = softmax(QK^T/√d_k)V
 Table 2: Comprehensive evaluation across four datasets shows remarkable generalization
 
 | Training → Testing | PhysFormer (MAE↓) | EfficientPhys (MAE↓) | **FactorizePhys (MAE↓)** |
-|-------------------|-------------------|---------------------|------------------------|
-| iBVP → PURE | 6.58 ± 1.98 | 0.56 ± 0.17 | **0.60 ± 0.21** |
-| SCAMPS → PURE | 16.64 ± 2.95 | 6.21 ± 2.26 | **5.43 ± 1.93** |
-| UBFC → PURE | 8.90 ± 2.15 | 4.71 ± 1.79 | **0.48 ± 0.17** |
+|------------------- |-------------------|----------------------|--------------------------|
+| iBVP → PURE        | 6.58 ± 1.98       | 0.56 ± 0.17          | **0.60 ± 0.21**          |
+| SCAMPS → PURE      | 16.64 ± 2.95      | 6.21 ± 2.26          | **5.43 ± 1.93**          |
+| UBFC → PURE        | 8.90 ± 2.15       | 4.71 ± 1.79          | **0.48 ± 0.17**          |
 
 **Key insight**: When trained on synthetic data (SCAMPS) and tested on real data, FactorizePhys shows the smallest performance gap, indicating superior domain transfer.
 
 *Table 3: Cross-dataset generalization performance comparison*
 
-![Cross-Dataset Performance](/assets/img/factorizephys/cross-dataset-performance.png)
+<!-- ![Cross-Dataset Performance](/assets/img/factorizephys/cross-dataset-performance.png) -->
+<p>
+    <img src="/assets/img/factorizephys/cross-dataset-performance.png" alt="Cross-Dataset Performance" style="width:80%; height:auto;">
+</p>
 
 FactorizePhys consistently outperforms existing state-of-the-art methods, including the transformer-based methods across different domain shifts, particularly in synthetic-to-real transfer scenarios.
 
@@ -162,7 +174,10 @@ Our cosine similarity visualization between temporal embeddings and ground-truth
 - **Better spatial selectivity** - correctly identifies skin regions with strong pulse signals
 - **Robustness to occlusions** - maintains attention quality even with hair, glasses, or beard
 
-![Attention Visualization](assets/img/factorizephys/Attention_Maps.png)
+<!-- ![Attention Visualization](assets/img/factorizephys/Attention_Maps.png) -->
+<p>
+    <img src="/assets/img/factorizephys/Attention_Maps.png" alt="Attention Visualization" style="width:70%; height:auto;">
+</p>
 
 *Figure 3: Attention visualization comparing baseline model (left) and FactorizePhys with FSAM (right). Higher cosine similarity scores (brighter regions) indicate better spatial selectivity for pulse-rich facial regions.*
 
@@ -181,7 +196,10 @@ output = head(voxel_embeddings)  # No FSAM needed!
 
 This dramatically reduces inference latency while maintaining accuracy - ideal for real-time applications.
 
-![Inference Time Comparison](/assets/img/factorizephys/Inference-latency.png)
+<!-- ![Inference Time Comparison](/assets/img/factorizephys/Inference-latency.png) -->
+<p>
+    <img src="/assets/img/factorizephys/Inference-latency.png" alt="Inference Time Comparison" style="width:60%; height:auto;">
+</p>
 
 *Figure 4: Performance vs. latency comparison showing FactorizePhys achieves superior accuracy with minimal inference time, especially when FSAM is dropped during inference.*
 
@@ -225,10 +243,10 @@ FSAM demonstrates that the deeper understanding the problem domain can lead to m
 
 ## Code and Data Availability
 
-| Resources |  | Link |
-|----------|--|------|
-| **Paper** |  | [FactorizePhys](https://proceedings.neurips.cc/paper_files/paper/2024/hash/af1c61e4dd59596f033d826419870602-Abstract-Conference.html) |
-| **Code** |  | [GitHub](https://github.com/PhysiologicAILab/FactorizePhys) |
+| Resources   |  | Link |
+|-------------|--|------|
+| **Paper**   |  | [FactorizePhys](https://proceedings.neurips.cc/paper_files/paper/2024/hash/af1c61e4dd59596f033d826419870602-Abstract-Conference.html) |
+| **Code**    |  | [GitHub](https://github.com/PhysiologicAILab/FactorizePhys) |
 | **Dataset** |  | [iBVP Dataset](https://github.com/PhysiologicAILab/iBVP-Dataset) |
 
 ---
