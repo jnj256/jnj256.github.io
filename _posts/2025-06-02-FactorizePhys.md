@@ -8,27 +8,14 @@ categories: computer-vision
 author: Jitesh Joshi, Youngjun Cho
 ---
 
+## How can factorization serve as attention?
 
-# Matrix Factorization as Attention: Rethinking Multidimensional Feature Processing in Remote Physiological Sensing
-
-It's been over 6 months since NeurIPS 2024, where we presented our work on Remote Photoplethysmography (rPPG) [[1]](#references). The conference was memorable, and our work was appreciated by several attendees who visited our poster session. Some obvious queries from fellow researchers stressed why not use transformer networks, when cross-attention has been the backbone of LLM advancements. Researchers even attempted to draw parallels with cross-attention formulation to understand our proposed matrix factorization-based multidimensional attention (FSAM), with their key concern being: **how can factorization serve as attention?**
+We presented our work on Remote Photoplethysmography (rPPG) [[1]](#references) at NeurIPS 2024, held at Vancouver, Canada during 10th to 14th December. The conference was extremely memorable, and our work was appreciated by several attendees who visited our poster session. Some obvious queries from fellow researchers stressed why not use transformer networks, when cross-attention has been the backbone of LLM advancements. Researchers even attempted to draw parallels with cross-attention formulation to understand our proposed matrix factorization-based multidimensional attention (FSAM), with their key concern being: **how can factorization serve as attention?**
 
 This blog post is dedicated to the rPPG research community and all researchers who want to understand the rationale behind matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
 
 ![FactorizePhys Poster](/assets/img/factorizephys/FactorizePhys_Poster.png)
 *Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.*
-
-<!-- {% raw %}
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/factorizephys/FactorizePhys_Poster.png" title="FactorizePhys Poster" class="img-fluid rounded z-depth-1" %}
-</div>
-<div class="caption">
-    Figure 1: Our poster at NeurIPS 2024, where we discussed FSAM with fellow researchers from the computer vision and machine learning community.
-</div>
-
-{% endraw %} -->
 
 
 ## The Compression-as-Attention Paradigm
@@ -45,7 +32,7 @@ This is precisely the problem our work addresses. FSAM uses Non-negative Matrix 
 2. **Parameter-free optimization** - Uses classic Lee & Seung multiplicative update rules, which were recently by  , implemented under 'no_grad' block
 3. **Task-specific design** - Tailored for signal extraction tasks with rank-1 factorization
 
-![FSAM Overview](assets/img/factorizephys/FSAM.png)
+![FSAM Overview](/assets/img/factorizephys/FSAM.png)
 *Figure 2: Overview of the Factorized Self-Attention Module (FSAM) showing how multidimensional voxel embeddings are transformed into a 2D matrix, factorized using NMF, and reconstructed to provide attention weights.*
 
 ## Mathematical Formulation
@@ -156,7 +143,7 @@ Comprehensive evaluation across four datasets shows remarkable generalization:
 
 **Key insight**: When trained on synthetic data (SCAMPS) and tested on real data, FactorizePhys shows the smallest performance gap, indicating superior domain transfer.
 
-![Cross-Dataset Performance](assets/img/factorizephys/cross-dataset-performance.png)
+![Cross-Dataset Performance](/assets/img/factorizephys/cross-dataset-performance.png)
 *Figure 4: Cross-dataset generalization performance comparison. FactorizePhys consistently outperforms transformer-based methods across different domain shifts, particularly in synthetic-to-real transfer scenarios.*
 
 ### 4. **Attention Visualization**
@@ -185,7 +172,7 @@ output = head(voxel_embeddings)  # No FSAM needed!
 
 This dramatically reduces inference latency while maintaining accuracy - ideal for real-time applications.
 
-![Inference Time Comparison](assets/img/factorizephys/Inference-latency.png)
+![Inference Time Comparison](/assets/img/factorizephys/Inference-latency.png)
 *Figure 6: Performance vs. latency comparison showing FactorizePhys achieves superior accuracy with minimal inference time, especially when FSAM is dropped during inference.*
 
 ## Key Contributions and Broader Implications
@@ -228,11 +215,11 @@ FSAM demonstrates that understanding your problem domain deeply can lead to more
 
 ## Code and Data Availability
 
-| Resource | Link | Description |
-|----------|------|-------------|
-| **Paper** | [FactorizePhys](https://proceedings.neurips.cc/paper_files/paper/2024/hash/af1c61e4dd59596f033d826419870602-Abstract-Conference.html) | Full NeurIPS 2024 paper |
-| **Code** | [GitHub](https://github.com/PhysiologicAILab/FactorizePhys) | Complete implementation |
-| **Dataset** | [iBVP Dataset](https://github.com/PhysiologicAILab/iBVP-Dataset) | RGB-Thermal rPPG dataset |
+| Resource | Link |
+|----------|------|
+| **Paper** | [FactorizePhys](https://proceedings.neurips.cc/paper_files/paper/2024/hash/af1c61e4dd59596f033d826419870602-Abstract-Conference.html) |
+| **Code** | [GitHub](https://github.com/PhysiologicAILab/FactorizePhys) |
+| **Dataset** | [iBVP Dataset](https://github.com/PhysiologicAILab/iBVP-Dataset) |
 
 ---
 
