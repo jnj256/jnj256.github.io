@@ -49,7 +49,7 @@ FSAM uses Non-negative Matrix Factorization (NMF) [[3]](#references) to factoriz
 
 ### The Critical Transformation
 
-For input spatial-temporal data **I ∈ ℝ^(T×C×H×W)**, we generate voxel embeddings **ω ∈ ℝ^(ω×ε×ϑ×ϖ)** through 3D feature extraction. The **core innovation** lies in how we reshape these embeddings for factorization.
+For input spatial-temporal data **$I ∈ ℝ^(T×C×H×W)$**, we generate voxel embeddings **$ω ∈ ℝ^(ω×ε×ϑ×ϖ)$** through 3D feature extraction. The **core innovation** lies in how we reshape these embeddings for factorization.
 
 **Traditional 2D approach** (like Hamburger module [[4]](#references)):
 
@@ -62,8 +62,8 @@ $$V_st ∈ ℝ^(M×N) where: ε (temporal) → M, ϑ×ϖ×ϱ (spatial+channel) �
 This transformation is **crucial** for rPPG estimation because:
 
 - **Physiological signal correlation**: We need correlations between spatial/channel features and temporal patterns for BVP signal recovery
-- **Single signal source**: Only one underlying BVP signal across facial regions justifies rank-1 factorization (L=1)
-- **Scale considerations**: Temporal and spatial dimensions have vastly different scales (typically ε >> ϖ, ϱ for video data)
+- **Single signal source**: Only one underlying BVP signal across facial regions justifies rank-1 factorization ($L=1$)
+- **Scale considerations**: Temporal and spatial dimensions have vastly different scales (typically $ε >> ϖ, ϱ$ for video data)
 
 ### The NMF Attention Mechanism
 
@@ -93,11 +93,11 @@ for step in range(MD_STEPS):
     bases = bases ⊙ (numerator / (denominator + ε))
 
 # Reconstruct attention
-$$V̂_st = bases @ coef^T$$
-$$ω̂ = reshape_back(V̂_st)$$
+V̂_st = bases @ coef^T
+ω̂ = reshape_back(V̂_st)
 
 # Apply attention with residual connection
-$$output = ω + InstanceNorm(ω ⊙ postprocess(ω̂))$$
+output = ω + InstanceNorm(ω ⊙ postprocess(ω̂))
 ```
 
 <!-- ![NMF Algorithm Flowchart](images/nmf-algorithm-flowchart.png)
@@ -126,9 +126,8 @@ The paper's ablation studies confirm that **rank-1 factorization performs optima
 
 **Transformers** use generic self-attention that treats all positions equally:
 
-```
-Attention(Q,K,V) = softmax(QK^T/√d_k)V
-```
+$$Attention(Q,K,V) = softmax(QK^T/√d_k)V$$
+
 
 **FSAM** is specifically designed for spatial-temporal signal extraction:
 
@@ -141,13 +140,18 @@ Attention(Q,K,V) = softmax(QK^T/√d_k)V
 
 ### 3. **Superior Cross-Dataset Generalization**
 
+<center>
+
 Table 2: Comprehensive evaluation across four datasets shows remarkable generalization
 
+
 | Training → Testing | PhysFormer (MAE↓) | EfficientPhys (MAE↓) | **FactorizePhys (MAE↓)** |
-|------------------- |-------------------|----------------------|--------------------------|
+|:------------------ |:-----------------:|:--------------------:|:------------------------:|
 | iBVP → PURE        | 6.58 ± 1.98       | 0.56 ± 0.17          | **0.60 ± 0.21**          |
 | SCAMPS → PURE      | 16.64 ± 2.95      | 6.21 ± 2.26          | **5.43 ± 1.93**          |
 | UBFC → PURE        | 8.90 ± 2.15       | 4.71 ± 1.79          | **0.48 ± 0.17**          |
+
+</center>
 
 **Key insight**: When trained on synthetic data (SCAMPS) and tested on real data, FactorizePhys shows the smallest performance gap, indicating superior domain transfer.
 
