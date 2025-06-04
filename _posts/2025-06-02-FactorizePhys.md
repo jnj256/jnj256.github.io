@@ -116,18 +116,11 @@ The paper's ablation studies confirm that **rank-1 factorization performs optima
 
 ## Why FSAM Outperforms Transformers
 
-### 1. **Computational Efficiency with Purpose**
-
-- **FSAM complexity**: O(n) with 4-8 multiplicative update steps
-- **Transformer complexity**: O(n²) with full attention computation [[5]](#references)
-- **Parameter comparison**: FactorizePhys (52K) vs PhysFormer (7.38M) - **138x fewer parameters**
-
-### 2. **Task-Specific vs Generic Design**
+### 1. **Task-Specific vs Generic Design**
 
 **Transformers** use generic self-attention that treats all positions equally:
 
 $$Attention(Q,K,V) = softmax(QK^T/√d_k)V$$
-
 
 **FSAM** is specifically designed for spatial-temporal signal extraction:
 
@@ -135,23 +128,24 @@ $$Attention(Q,K,V) = softmax(QK^T/√d_k)V$$
 - **Spatial-channel features as descriptors** (different facial regions contribute differently)
 - **Rank-1 constraint** enforces single signal source assumption
 
+### 2. **Computational Efficiency**
+
+- **FSAM complexity**: O(n) with 4-8 multiplicative update steps
+- **Transformer complexity**: O(n²) with full attention computation [[5]](#references)
+- **Parameter comparison**: FactorizePhys (52K) vs PhysFormer (7.38M) - **138x fewer parameters**
+
 <!-- ![Attention Mechanism Comparison](images/transformer-vs-fsam-attention.png)
 *Figure 7: Conceptual comparison between Transformer self-attention (left) and FSAM factorization-based attention (right), highlighting the task-specific design of FSAM for signal extraction.* -->
 
 ### 3. **Superior Cross-Dataset Generalization**
 
-<center>
-
-Table 2: Comprehensive evaluation across four datasets shows remarkable generalization
-
+**Table 2: Comprehensive evaluation across four datasets shows remarkable generalization**
 
 | Training → Testing | PhysFormer (MAE↓) | EfficientPhys (MAE↓) | **FactorizePhys (MAE↓)** |
 |:------------------ |:-----------------:|:--------------------:|:------------------------:|
 | iBVP → PURE        | 6.58 ± 1.98       | 0.56 ± 0.17          | **0.60 ± 0.21**          |
 | SCAMPS → PURE      | 16.64 ± 2.95      | 6.21 ± 2.26          | **5.43 ± 1.93**          |
 | UBFC → PURE        | 8.90 ± 2.15       | 4.71 ± 1.79          | **0.48 ± 0.17**          |
-
-</center>
 
 **Key insight**: When trained on synthetic data (SCAMPS) and tested on real data, FactorizePhys shows the smallest performance gap, indicating superior domain transfer.
 
@@ -170,7 +164,6 @@ Our cosine similarity visualization between temporal embeddings and ground-truth
 
 - **Higher correlation scores** for FactorizePhys with FSAM
 - **Better spatial selectivity** - correctly identifies skin regions with strong pulse signals
-- **Robustness to occlusions** - maintains attention quality even with hair, glasses, or beard
 
 <!-- ![Attention Visualization](assets/img/factorizephys/Attention_Maps.png) -->
 <div align="center">
@@ -181,7 +174,7 @@ Our cosine similarity visualization between temporal embeddings and ground-truth
 
 ## The Inference-Time Advantage
 
-A surprising finding: **FactorizePhys trained with FSAM retains performance even when FSAM is dropped during inference**. This suggests FSAM acts as a "teacher" during training, guiding the network to learn more salient feature representations that persist without the attention module.
+A surprising finding: **FactorizePhys trained with FSAM retains performance even when FSAM is dropped during inference**. This suggests FSAM enhances saliency of relevant features during training, guiding the network to learn such salient feature representations that persist without the attention module.
 
 ```python
 # Training: FSAM influences 3D convolutional kernels
