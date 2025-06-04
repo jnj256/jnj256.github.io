@@ -12,7 +12,7 @@ author: Jitesh Joshi, Youngjun Cho
 
 We presented our work - FactorizePhys [[1]](#references), that focuses on remote photoplethysmography (rPPG), at NeurIPS 2024, held at Vancouver, Canada during 10th to 14th December. The conference was extremely memorable, and our work was appreciated by several attendees who visited our poster session. Some obvious queries from fellow researchers stressed why not use transformer networks, when cross-attention has been the backbone of LLM advancements. Researchers even attempted to draw parallels with cross-attention formulation to understand our proposed matrix factorization-based multidimensional attention (FSAM), with their key concern being: **how can factorization serve as attention?**
 
-This blog post is dedicated to the rPPG research community and all researchers who want to understand the rationale behind matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
+Here, we explore the rationale behind matrix factorization-based attention mechanisms and how they differ from self-attention/ cross-attention/ transformers.
 
 <!-- ![FactorizePhys Poster](/assets/img/factorizephys/FactorizePhys_Poster.png) -->
 <div align="center">
@@ -146,6 +146,7 @@ $$Attention(Q,K,V) = softmax(QK^T/√d_k)V$$
 | iBVP → PURE        | 6.58 ± 1.98       | 0.56 ± 0.17          | **0.60 ± 0.21**          |
 | SCAMPS → PURE      | 16.64 ± 2.95      | 6.21 ± 2.26          | **5.43 ± 1.93**          |
 | UBFC → PURE        | 8.90 ± 2.15       | 4.71 ± 1.79          | **0.48 ± 0.17**          |
+
 
 **Key insight**: When trained on synthetic data (SCAMPS) and tested on real data, FactorizePhys shows the smallest performance gap, indicating superior domain transfer.
 
