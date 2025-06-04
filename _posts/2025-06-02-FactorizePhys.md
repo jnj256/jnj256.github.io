@@ -8,9 +8,9 @@ categories: computer-vision
 author: Jitesh Joshi, Youngjun Cho
 ---
 
-## How can factorization serve as attention?
+<!-- ## How can factorization serve as attention? -->
 
-We presented our work on Remote Photoplethysmography (rPPG) [[1]](#references) at NeurIPS 2024, held at Vancouver, Canada during 10th to 14th December. The conference was extremely memorable, and our work was appreciated by several attendees who visited our poster session. Some obvious queries from fellow researchers stressed why not use transformer networks, when cross-attention has been the backbone of LLM advancements. Researchers even attempted to draw parallels with cross-attention formulation to understand our proposed matrix factorization-based multidimensional attention (FSAM), with their key concern being: **how can factorization serve as attention?**
+We presented our work - FactorizePhys [[1]](#references), that focuses on remote photoplethysmography (rPPG), at NeurIPS 2024, held at Vancouver, Canada during 10th to 14th December. The conference was extremely memorable, and our work was appreciated by several attendees who visited our poster session. Some obvious queries from fellow researchers stressed why not use transformer networks, when cross-attention has been the backbone of LLM advancements. Researchers even attempted to draw parallels with cross-attention formulation to understand our proposed matrix factorization-based multidimensional attention (FSAM), with their key concern being: **how can factorization serve as attention?**
 
 This blog post is dedicated to the rPPG research community and all researchers who want to understand the rationale behind matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
 
@@ -257,6 +257,6 @@ FSAM demonstrates that the deeper understanding the problem domain can lead to m
 
 ---
 
-*This work was conducted at the Department of Computer Science, University College London, under the supervision of Prof. Youngjun Cho.*
+*This work was conducted at the Department of Computer Science, University College London, under the supervision of Prof. Youngjun Cho. Jitesh Joshi was fully supported with international studentship that was secured by Prof. Cho*
 
 *For questions or collaborations, please contact: [jitesh.joshi.20@ucl.ac.uk](mailto:jitesh.joshi.20@ucl.ac.uk)*
