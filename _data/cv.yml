@@ -1,8 +1,8 @@
-- title: General Information
+- title: #General Information
   type: map
   contents:
-    - name: Name
-      value: Jitesh Narendra Joshi
+    # - name: Name
+    #   value: Jitesh Narendra Joshi
     - name: Resume/ CV
       value: Please download my CV from the PDF icon on the top-right of this page.    
     - name: Research Interests
