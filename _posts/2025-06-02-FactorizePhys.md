@@ -3,7 +3,7 @@ layout: post
 title: Matrix Factorization as Attention - Rethinking Multidimensional Feature Processing in Remote Physiological Sensing
 date: 2025-06-02 16:07:30
 description: Deciphering matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
-tags: matrix-factorization, attention, deep-learning, computer-vision, physiological-sensing
+tags: matrix-factorization, attention, deep-learning, computer-vision, physiological-computing, robustness
 categories: computer-vision
 author: Jitesh Joshi, Youngjun Cho
 ---

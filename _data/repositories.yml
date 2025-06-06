@@ -3,6 +3,7 @@ github_users:
 
 github_repos:
   - PhysiologicAILab/MMRPhys
+  - PhysiologicAILab/mmrphys-live
   - PhysiologicAILab/FactorizePhys
   - PhysiologicAILab/iBVP-Dataset
   - ubicomplab/rPPG-Toolbox
@@ -10,3 +11,4 @@ github_repos:
   - PhysiologicAILab/PhysioKit
   # - PhysiologicAILab/SAMCL_Inference
   - PhysiologicAILab/TC001_SAMCL
+  - PhysiologicAILab/rgbt_seg_live
