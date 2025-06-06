@@ -257,7 +257,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['computer-vision', 'physiological-computing', 'attention', 'deep-learning', 'semantic-segmentation', 'robustness', 'data-augmentation', 'healthcare'] # this tags will be dispalyed on the front page of your blog
+display_tags: ['computer-vision', 'physiological-computing', 'attention', 'deep-learning', 'semantic-segmentation', 'robustness', 'data-augmentation', 'dataset', 'healthcare'] # this tags will be dispalyed on the front page of your blog
 # display_tags: ['computer-vision', '', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
