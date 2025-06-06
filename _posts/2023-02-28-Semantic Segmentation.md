@@ -82,7 +82,7 @@ We evaluated SAM-CL across multiple state-of-the-art segmentation networks on th
 ### Qualitative Analysis: Real-World Robustness
 
 <div align="center">
-    <img src="/assets/img/samcl/samcl-qualitative.png" alt="Qualitative Results" style="width:90%; height:auto;">
+    <img src="/assets/img/samcl/samcl-qualitative.png" alt="Qualitative Results" style="width:75%; height:auto;">
 </div>
 
 *Figure 3: Qualitative comparison showing SAM-CL's superior performance on unconstrained thermal images with occlusions and varying ambient conditions.*
@@ -92,6 +92,12 @@ Testing on unconstrained datasets (UBComfort, DeepBreath) reveals SAM-CL's remar
 - **Handles eyeglasses occlusions** effectively despite never seeing them during training
 - **Adapts to different camera specifications** (high-resolution vs mobile thermal cameras)
 - **Maintains performance** across varying ambient thermal conditions
+
+### Demo
+
+<div align="center">
+    <img src="/assets/img/samcl/SAM-CL_Demo.gif" alt="SAMCL Demo" style="width:90%; height:auto;">
+</div>
 
 ## Key Insights and Broader Impact
 
@@ -140,6 +146,21 @@ The key insight is profound: when datasets are limited and domain gaps are large
 ---
 
 **Source Code**: [Code is available](https://github.com/PhysiologicAILab/SAM-CL) for the research community to build upon this work.
+
+**Citation:**
+
+```bib
+@inproceedings{Joshi_2022_BMVC,
+author    = {Jitesh N Joshi and Nadia Berthouze and Youngjun Cho},
+title     = {Self-adversarial Multi-scale Contrastive Learning for Semantic Segmentation of Thermal Facial Images},
+booktitle = {33rd British Machine Vision Conference 2022, {BMVC} 2022, London, UK, November 21-24, 2022},
+publisher = {BMVA Press},
+year      = {2022},
+url       = {https://bmvc2022.mpi-inf.mpg.de/0864.pdf}
+}
+```
+
+---
 
 *This work was conducted at the Department of Computer Science, University College London, under the supervision of Prof. Youngjun Cho. Jitesh Joshi was fully supported with international studentship that was secured by Prof. Cho*
 
