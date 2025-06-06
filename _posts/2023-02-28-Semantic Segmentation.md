@@ -55,7 +55,6 @@ where synthesized objects are characterized by size ($$\vartheta_{sz}$$), shape 
 
 Rather than using pixel-level contrastive learning that becomes ineffective with limited datasets, we propose logit-level contrastive learning:
 
-$$L_{SAM-CL} = L_{s0}(Y_{oh}, Y^+_{oh}, Y^-_{oh}) + \sum_{i=1}^{3} L_{si}(Y_{Conv_i}, Y^+_{Conv_i}, Y^-_{Conv_i})$$
 $$\mathscr{L}_{SAM-CL} = \mathscr{L}_{s0}(Y_{oh}, Y^{+}_{oh}, Y^{-}_{oh}) + \mathscr{L}_{s1}(Y_{Conv1}, Y^{+}_{Conv1}, Y^{-}_{Conv1}) + \mathscr{L}_{s2}(Y_{Conv2}, Y^{+}_{Conv2}, Y^{-}_{Conv2}) + \mathscr{L}_{s3}(Y_{Conv3}, Y^{+}_{Conv3}, Y^{-}_{Conv3})$$
 
 The key innovation is using **class-swapped masks** ($$Y^-_{oh}$$) as negative samples, enabling effective inter-class separation while preserving spatial structure. Multi-scale supervision through an auxiliary 4-layer network ensures robust feature learning across different resolution levels.
