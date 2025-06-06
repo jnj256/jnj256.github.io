@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Matrix Factorization as Attention - Rethinking Multidimensional Feature Processing in Remote Physiological Sensing
+title: FactorizePhys\: Matrix Factorization for Multidimensional Attention in Remote Physiological Sensing
 date: 2025-06-02 16:07:30
 description: Deciphering matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
 tags: matrix-factorization, attention, deep-learning, computer-vision, physiological-computing, robustness, healthcare
@@ -8,7 +8,7 @@ categories: computer-vision
 author: Jitesh Joshi, Youngjun Cho
 ---
 
-<!-- ## How can factorization serve as attention? -->
+## Matrix Factorization as Attention - Rethinking Multidimensional Feature Processing in Remote Physiological Sensing
 
 We presented our work - FactorizePhys [[1]](#references), that focuses on remote photoplethysmography (rPPG), at NeurIPS 2024, held at Vancouver, Canada during 10th to 14th December. The conference was extremely memorable, and our work was appreciated by several attendees who visited our poster session. Some obvious queries from fellow researchers stressed why not use transformer networks, when cross-attention has been the backbone of LLM advancements. Researchers even attempted to draw parallels with cross-attention formulation to understand our proposed matrix factorization-based multidimensional attention (FSAM), with their key concern being: **how can factorization serve as attention?**
 
