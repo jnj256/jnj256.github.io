@@ -116,13 +116,17 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Blogs # blog_name will be displayed in your blog page
-blog_nav_title: #blog # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: blogs # your blog must have a title for it to be displayed in the nav bar
 blog_description: (research, opinions, code, and more) # blog description will be displayed in the blog page
 permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
   enabled: true
+
+related_blog_posts:
+  enabled: true
+  max_related: 5
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out
@@ -165,8 +169,18 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+announcements:
+  enabled: true # enables announcements on the front page
+  scrollable: true # adds a vertical scroll bar if there are more than 3 announcements
+  limit: 5 # leave blank to include all the announcements in the `_announcements` folder
+
+# news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+# news_limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 5 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

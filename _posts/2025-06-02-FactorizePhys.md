@@ -49,15 +49,20 @@ FSAM uses Non-negative Matrix Factorization (NMF) [[3]](#references) to factoriz
 
 ### The Critical Transformation
 
-For input spatial-temporal data **$I ∈ ℝ^(T×C×H×W)$**, we generate voxel embeddings **$ω ∈ ℝ^(ω×ε×ϑ×ϖ)$** through 3D feature extraction. The **core innovation** lies in how we reshape these embeddings for factorization.
+Input spatial-temporal data can be expressed as $\mathcal{I} \in \mathbb{R}^{T \times C \times H \times W}$, where $T,~C,~H,~and~W$ represents total frames (temporal dimension), channels in a frame (e.g., for RGB frames, $C=3$), height and width of pixels in a frame, respectively. For this input $\mathcal{I}$, we generate voxel embeddings $\varepsilon \in \mathbb{R}^{\tau \times \kappa \times \alpha \times \beta}$ through 3D feature extraction. The **core innovation** lies in how we reshape these embeddings for factorization.
+ <!-- $I ∈ ℝ^(T×C×H×W)$,  -->
 
 **Traditional 2D approach** (like Hamburger module [[4]](#references)):
 
-$$V_s ∈ ℝ^(M×N) where: ϑ (channels) → M, ϖ×ϱ (spatial) → N$$
+<!-- $$V_s ∈ ℝ^(M×N) where: ϑ (channels) → M, ϖ×ϱ (spatial) → N$$ -->
+
+$$V^{s} \in \mathbb{R}^{M \times N} = \Gamma^{\kappa\alpha\beta \mapsto MN}(\xi_{pre}(\varepsilon \in \mathbb{R}^{\kappa \times \alpha \times \beta})) \ni \kappa \mapsto M,\alpha \times \beta \mapsto N$$
+
+where, $\kappa (channels) → M, \alpha \times \beta (spatial) → N$, and $\xi_{pre}$ represents preprocessing operation.
 
 **Our 3D spatial-temporal approach**:
 
-$$V_st ∈ ℝ^(M×N) where: ε (temporal) → M, ϑ×ϖ×ϱ (spatial+channel) → N$$
+$$V^{st} \in \mathbb{R}^{M \times N} = \Gamma^{\tau\kappa\alpha\beta \mapsto MN}(\xi_{pre}(\varepsilon \in \mathbb{R}^{\tau \times \kappa \times \alpha \times \beta})) \ni \tau (temporal) \mapsto M, \kappa \times \alpha \times \beta (spatial+channel) \mapsto N$$
 
 This transformation is **crucial** for rPPG estimation because:
 
@@ -70,34 +75,44 @@ This transformation is **crucial** for rPPG estimation because:
 The factorization process uses iterative multiplicative updates:
 
 ```python
-# Preprocessing: ensure non-negativity for NMF
-x = ReLU(Conv3D(ω - ω.min()))
+def fsam(E)
+    S = 1
+    rank = 1
+    MD_STEPS = 4
+    ε = 1e-4
+    batch, channel_dim, temporal_dim, alpha, beta = E.shape
+    spatial_dim = alpha x beta
 
-# Transform to factorization matrix
-V_st = reshape(x, (batch×S, temporal_dim, spatial×channel_dim))
+    # Preprocessing: ensure non-negativity for NMF
+    x = ReLU(Conv3D(E - E.min()))
 
-# Initialize bases and coefficients
-bases = ones(batch×S, temporal_dim, rank=1)
-coef = softmax(V_st^T @ bases)
+    # Transform to factorization matrix
+    V_st = reshape(x, (batch × S, temporal_dim, spatial_dim × channel_dim))
 
-# Iterative multiplicative updates (4-8 steps)
-for step in range(MD_STEPS):
-    # Update coefficients
-    numerator = V_st^T @ bases
-    denominator = coef @ (bases^T @ bases)
-    coef = coef ⊙ (numerator / (denominator + ε))
+    # Initialize bases and coefficients
+    bases = torch.ones(batch × S, temporal_dim, rank)
+    coef = softmax(V_st^T @ bases)
+
+    # Iterative multiplicative updates (4-8 steps)
+    for step in range(MD_STEPS):
+        # Update coefficients
+        numerator = V_st^T @ bases
+        denominator = coef @ (bases^T @ bases)
+        coef = coef ⊙ (numerator / (denominator + ε))
+        
+        # Update bases  
+        numerator = V_st @ coef
+        denominator = bases @ (coef^T @ coef)
+        bases = bases ⊙ (numerator / (denominator + ε))
+
+    # Reconstruct attention
+    V̂_st = bases @ coef^T
+    Ê = reshape(V̂_st, (batch, channel_dim, temporal_dim, alpha, beta))
+
+    # Apply attention with residual connection
+    output = E + InstanceNorm(E ⊙ ReLU(Conv3D(Ê))) 
     
-    # Update bases  
-    numerator = V_st @ coef
-    denominator = bases @ (coef^T @ coef)
-    bases = bases ⊙ (numerator / (denominator + ε))
-
-# Reconstruct attention
-V̂_st = bases @ coef^T
-ω̂ = reshape_back(V̂_st)
-
-# Apply attention with residual connection
-output = ω + InstanceNorm(ω ⊙ postprocess(ω̂))
+    return output
 ```
 
 <!-- ![NMF Algorithm Flowchart](images/nmf-algorithm-flowchart.png)
@@ -124,9 +139,9 @@ $$Attention(Q,K,V) = softmax(QK^T/√d_k)V$$
 
 **FSAM** is specifically designed for spatial-temporal signal extraction:
 
-- **Temporal vectors as the primary dimension** (signals evolve over time)
+- **Temporal vectors as the primary dimension** (signals evolve over time, and directly supervised through loss function)
 - **Spatial-channel features as descriptors** (different facial regions contribute differently)
-- **Rank-1 constraint** enforces single signal source assumption
+- **Rank-1 constraint** enforces single signal source assumption, though this may differ across downstream tasks and characteristics of the data
 
 ### 2. **Computational Efficiency**
 
