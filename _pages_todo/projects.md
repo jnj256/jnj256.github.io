@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Research Projects.
-nav: true
+nav: false
 nav_order: 6
 display_categories: [computer vision, semantic segmentation, rPPG, attention mechanism]
 horizontal: false
