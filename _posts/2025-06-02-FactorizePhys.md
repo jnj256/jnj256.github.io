@@ -49,7 +49,7 @@ FSAM uses Non-negative Matrix Factorization (NMF) [[3]](#references) to factoriz
 
 ### The Critical Transformation
 
-Input spatial-temporal data can be expressed as $\mathcal{I} \in \mathbb{R}^{T \times C \times H \times W}$, where $T,~C,~H,~and~W$ represents total frames (temporal dimension), channels in a frame (e.g., for RGB frames, $C=3$), height and width of pixels in a frame, respectively. For this input $\mathcal{I}$, we generate voxel embeddings $\varepsilon \in \mathbb{R}^{\tau \times \kappa \times \alpha \times \beta}$ through 3D feature extraction. The **core innovation** lies in how we reshape these embeddings for factorization.
+Input spatial-temporal data can be expressed as $$\mathcal{I} \in \mathbb{R}^{T \times C \times H \times W}$$, where $$T,~C,~H,~and~W$$ represents total frames (temporal dimension), channels in a frame (e.g., for RGB frames, $$C=3$$), height and width of pixels in a frame, respectively. For this input $$\mathcal{I}$$, we generate voxel embeddings $$\varepsilon \in \mathbb{R}^{\tau \times \kappa \times \alpha \times \beta}$$ through 3D feature extraction. The **core innovation** lies in how we reshape these embeddings for factorization.
  <!-- $I ∈ ℝ^(T×C×H×W)$,  -->
 
 **Traditional 2D approach** (like Hamburger module [[4]](#references)):
@@ -58,7 +58,7 @@ Input spatial-temporal data can be expressed as $\mathcal{I} \in \mathbb{R}^{T \
 
 $$V^{s} \in \mathbb{R}^{M \times N} = \Gamma^{\kappa\alpha\beta \mapsto MN}(\xi_{pre}(\varepsilon \in \mathbb{R}^{\kappa \times \alpha \times \beta})) \ni \kappa \mapsto M,\alpha \times \beta \mapsto N$$
 
-where, $\kappa (channels) → M, \alpha \times \beta (spatial) → N$, and $\xi_{pre}$ represents preprocessing operation.
+where, $$\kappa (channels) → M, \alpha \times \beta (spatial) → N$$, and $$\xi_{pre}$$ represents preprocessing operation.
 
 **Our 3D spatial-temporal approach**:
 

@@ -1,14 +1,14 @@
-Download [my CV here](/assets/pdf/jitesh_joshi_cv.pdf). Please note that this is only updated semi-regularly!
-
-# - title: General Information
-#   type: map
-#   contents:
-#     - name: Name
-#       value: Jitesh Narendra Joshi
-#     - name: Work Authorization
-#       value: India (citizenship), United Kingdom (Global Talent Visa, endorsed by Royal Academy of Engineering)
-#     - name: Research Interests
-#       value: Multidimensional attention mechanisms, domain generalization, physiological computing, computer vision, thermal imaging, generative AI
+- title: General Information
+  type: map
+  contents:
+    - name: Name
+      value: Jitesh Narendra Joshi
+    - name: Work Authorization
+      value: India (citizenship), United Kingdom (Global Talent Visa, endorsed for Exceptional Talent/ Promise by Royal Academy of Engineering in Jan, 2025)
+    - name: Research Interests
+      value: Computer Vision, Machine Learning, Deep Learning, Attention Mechanisms, Robustness, Domain Generalization, Physiological Computing, Remote Physiological Sensing, Thermal Imaging, Multispectral Imaging, Neuroimaging (fMRI, EEG), Diffusion Models, Large Vision Language Models, Edge AI, Explainable AI
+    - name: Resume/ CV
+      value: Please download my CV from [this link](/assets/pdf/jitesh_joshi_cv.pdf) or from PDF icon on the top-right.
 
 # - title: Professional Experience
 #   type: time_table

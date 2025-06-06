@@ -169,18 +169,21 @@ collections:
     output: true
     permalink: /projects/:path/
 
-announcements:
-  enabled: true # enables announcements on the front page
-  scrollable: true # adds a vertical scroll bar if there are more than 3 announcements
-  limit: 5 # leave blank to include all the announcements in the `_announcements` folder
+# announcements:
+#   enabled: true # enables announcements on the front page
+#   scrollable: true # adds a vertical scroll bar if there are more than 3 announcements
+#   limit: 5 # leave blank to include all the announcements in the `_announcements` folder
 
-# news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-# news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+news_limit: 5 # leave blank to include all the news in the `_news` folder
 
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 5 # leave blank to include all the blog posts
+posts_scrollable: true # adds a vertical scroll bar if there are more than 3 posts items
+posts_limit: 5 # leave blank to include all the posts in the `_posts` folder
+
+# latest_posts:
+#   enabled: true
+#   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+#   limit: 5 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

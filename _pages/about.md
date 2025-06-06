@@ -16,6 +16,7 @@ profile:
     <p><a href='https://profiles.ucl.ac.uk/79098-jitesh-joshi'>UCL Profile Page</a></p>
 
 news: true  # includes a list of news items
+latest_posts: true
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
