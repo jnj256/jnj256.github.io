@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FactorizePhys\: Matrix Factorization for Multidimensional Attention in Remote Physiological Sensing
+title: "FactorizePhys: Matrix Factorization for Multidimensional Attention in Remote Physiological Sensing"
 date: 2025-06-02 16:07:30
 description: Deciphering matrix factorization-based attention mechanisms and how they differ from cross-attention/transformers.
 tags: matrix-factorization, attention, deep-learning, computer-vision, physiological-computing, robustness, healthcare
