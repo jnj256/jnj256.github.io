@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SAMCL: Self-Adversarial Multi-scale Contrastive Learning for Semantic Segmentation of Thermal Facial Images
+title: SAMCL - Self-Adversarial Multi-scale Contrastive Learning for Semantic Segmentation of Thermal Facial Images
 date: 2023-02-28 01:55:16
 description: Tackling real-world challenges in thermal image segmentation through domain-specific augmentation and novel contrastive learning
 tags: adversarial-learning, contrastive-learning, semantic-segmentation, data-augmentation, robustness
