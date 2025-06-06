@@ -4,7 +4,7 @@
     # - name: Name
     #   value: Jitesh Narendra Joshi
     - name: Resume/ CV
-      value: Please download my CV from the PDF icon on the top-right of this page.    
+      value: Please download the CV using the PDF icon on the top-right of this page.    
     - name: Research Interests
       value: Computer Vision, Machine Learning, Deep Learning, Attention Mechanisms, Robustness, Domain Generalization, Physiological Computing, Remote Physiological Sensing, Thermal Imaging, Multispectral Imaging, Neuroimaging (fMRI, EEG), Diffusion Models, Large Vision Language Models, Edge AI, Explainable AI
     - name: Work Authorization
