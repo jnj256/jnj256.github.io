@@ -10,7 +10,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Room: 3.05</p>
+    <p>Desk: 3.05</p>
     <p>169 Euston Road</p>
     <p>London, UK, NW1 2AE</p>
     <p><a href='https://profiles.ucl.ac.uk/79098-jitesh-joshi'>UCL Profile Page</a></p>
