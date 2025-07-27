@@ -16,10 +16,11 @@ Organize your courses by years, topics, or universities, however you like! -->
 
 1. IEEE Access
 2. IEEE Journal of Biomedical and Health Informatics
-3. NeurIPS
+3. NeurIPS, 2025
 4. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)
 5. Springer's Physical and Engineering Sciences in Medicine
 6. PeerJ
+7. ACM International Conference on Multimodal Interaction -> International Workshop on Automated Assessment of Pain (AAP), 2025
 
 
 ## Teaching
